@@ -77,7 +77,13 @@ a {
 }
 
 // Form Fields
-.form-legend,
-.form-body {
+.form-input,
+.form-select {
     background-color: stencilString("uco_form-field_backgroundColor");
+}
+
+.form-select {
+    &:hover {
+        background-color: stencilString("uco_form-field_backgroundColor");
+    }
 }
