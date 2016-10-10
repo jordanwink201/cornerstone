@@ -82,7 +82,13 @@ a {
 }
 
 // Form Fields
-.form-legend,
-.form-body {
+.form-input,
+.form-select {
     background-color: stencilString("checkout_formField_backgroundColor");
+}
+
+.form-select {
+    &:hover {
+        background-color: stencilString("checkout_formField_backgroundColor");
+    }
 }
