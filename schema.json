@@ -1471,22 +1471,22 @@
       {
         "type": "checkbox",
         "label": "Use custom background",
-        "id": "uco_use_custom_background"
+        "id": "checkout_use_custom_background"
       },
       {
         "type": "image",
         "label": "1000 x 400px recommended",
-        "reference": "uco_use_custom_background",
+        "reference": "checkout_use_custom_background",
         "reference_default": false,
-        "id": "uco_custom_background_image"
+        "id": "checkout_custom_background_image"
       },
       {
         "type": "imageDimension",
         "description": "Please specify a maximum image size for desktop display. We'll automatically scale down the image for smaller devices.",
         "label": "",
-        "reference": "uco_use_custom_background",
+        "reference": "checkout_use_custom_background",
         "reference_default": false,
-        "id": "uco_custom_background_image_size",
+        "id": "checkout_custom_background_image_size",
         "options": [
           {
             "value": "1000x400",
@@ -1505,7 +1505,7 @@
       {
         "type": "select",
         "label": "Use Custom Logo",
-        "id": "uco_use_custom_logo",
+        "id": "checkout_use_custom_logo",
         "options": [
           {
             "value": "none",
@@ -1520,18 +1520,18 @@
       {
         "type": "image",
         "label": "250 x 100px recommended",
-        "reference": "uco_use_custom_logo",
+        "reference": "checkout_use_custom_logo",
         "reference_default": "none",
         "force_reload": true,
-        "id": "uco_custom_logo_image"
+        "id": "checkout_custom_logo_image"
       },
       {
         "type": "imageDimension",
         "description": "Please specify a maximum image size for desktop display. We'll automatically scale down the image for smaller devices.",
         "label": "",
-        "reference": "uco_use_custom_logo",
+        "reference": "checkout_use_custom_logo",
         "reference_default": "none",
-        "id": "uco_custom_logo_image_size",
+        "id": "checkout_custom_logo_image_size",
         "force_reload": true,
         "options": [
           {
@@ -1547,7 +1547,7 @@
       {
         "type": "select",
         "label": "Position",
-        "id": "uco_logo_position",
+        "id": "checkout_logo_position",
         "options": [
           {
             "value": "left",
@@ -1570,7 +1570,7 @@
       {
         "type": "color",
         "label": "Background color",
-        "id": "uco_main_backgroundColor"
+        "id": "checkout_main_backgroundColor"
       },
       {
         "type": "heading",
@@ -1579,7 +1579,7 @@
       {
         "type": "color",
         "label": "Background color",
-        "id": "uco_cart_backgroundColor"
+        "id": "checkout_cart_backgroundColor"
       },
       {
         "type": "heading",
@@ -1588,7 +1588,7 @@
       {
         "type": "font",
         "label": "Headings",
-        "id": "uco_headings_font",
+        "id": "checkout_headings_font",
         "options": [
           {
             "group": "Montserrat",
@@ -1620,7 +1620,7 @@
       {
         "type": "font",
         "label": "Body",
-        "id": "uco_body_font",
+        "id": "checkout_body_font",
         "options": [
           {
             "group": "Karla",
@@ -1642,22 +1642,22 @@
       {
         "type": "color",
         "label": "Links",
-        "id": "uco_links_color"
+        "id": "checkout_links_color"
       },
       {
         "type": "color",
         "label": "Buttons",
-        "id": "uco_buttons_color"
+        "id": "checkout_buttons_color"
       },
       {
         "type": "color",
         "label": "Errors",
-        "id": "uco_errors_color"
+        "id": "checkout_errors_color"
       },
       {
         "type": "select",
         "label": "Form Fields",
-        "id": "uco_form-field_backgroundColor",
+        "id": "checkout_formField_backgroundColor",
         "options": [
           {
             "value": "white",
