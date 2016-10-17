@@ -28,9 +28,11 @@
 }
 
 // Typography
+$headings-font-family:           stencilFontFamily("checkout_headings_font"), Arial, Helvetica, sans-serif;
+$headings-font-weight:           stencilFontWeight("checkout_headings_font");
 
-$fontFamily-headings:           stencilFontFamily("checkout_headings_font"), Arial, Helvetica, sans-serif;
-$fontFamily-sans:               stencilFontFamily("checkout_body_font"), Arial, Helvetica, sans-serif;
+$body-font-family:               stencilFontFamily("checkout_body_font"), Arial, Helvetica, sans-serif;
+$body-font-weight:               stencilFontFamily("checkout_body_font");
 
 // Headings
 h1,
@@ -39,12 +41,14 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: $fontFamily-headings;
+    font-family: $headings-font-family;
+    font-weight: $headings-font-weight;
 }
 
 // Body
 body {
-    font-family: $fontFamily-sans;
+    font-family: $body-font-family;
+    font-weight: $body-font-weight;
 }
 
 // Links
