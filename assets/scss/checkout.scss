@@ -22,8 +22,11 @@
     background-color: stencilColor("checkout_main_backgroundColor");
 }
 
-// Order Summary
-.cart {
+// Order Summary, Mobile Order Summary, Modal Order Summary
+.cart,
+.cartDrawer,
+.cart-modal-body,
+.cart-modal-header {
     background-color: stencilColor("checkout_cart_backgroundColor");
 }
 
