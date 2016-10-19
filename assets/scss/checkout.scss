@@ -10,6 +10,7 @@
 .checkoutHeader {
     background-image: url(stencilImage('checkout_custom_background_image', 'checkout_custom_background_image_size'));
     background-size: cover;
+    background-color: stencilColor("checkout_header_backgroundColor");
 
     // Desktop Only
     @include breakpoint("medium") {
@@ -49,6 +50,7 @@ h6 {
 body {
     font-family: $body-font-family;
     font-weight: $body-font-weight;
+    color: stencilColor("checkout_body_color");
 }
 
 // Links
@@ -58,7 +60,7 @@ a {
 
 // Buttons
 .button {
-    background-color: stencilColor("checkout_buttons_color");
+    background-color: stencilColor("checkout_buttons_backgroundColor");
 }
 
 // Errors
