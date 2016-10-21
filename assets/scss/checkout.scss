@@ -2,10 +2,56 @@
 // Stencil Checkout  - Customize the checkout experience
 // =============================================================================
 
+// -----------------------------------------------------------------------------
+//
+// 1. Screensizes
+//
+// -----------------------------------------------------------------------------
 @import "../../node_modules/@bigcommerce/citadel/dist/tools/toolkit"; // 1
-@import "settings/global/global"; // 1
 
+@import "settings/global/global"; // 1
 @import "../../node_modules/@bigcommerce/citadel/dist/settings/global/global"; // 2
+
+// -----------------------------------------------------------------------------
+//
+// 2. Buttons
+//
+// -----------------------------------------------------------------------------
+
+// Settings
+// -----------------------------------------------------------------------------
+//
+// 1. Stencil global settings get imported first.
+// 2. Import all Citadel and Foundation settings.
+// 3. Import Citadel's version of foundation.
+//      - This enables the ability to "null" variables in the Stencil settings.
+// 4. Import Stencil's component settings overrides.
+//
+// -----------------------------------------------------------------------------
+
+@import "../../node_modules/@bigcommerce/citadel/dist/settings/foundation/global/settings"; // 2
+@import "../../node_modules/@bigcommerce/citadel/dist/settings/foundation/type/settings"; // 2
+@import "../../node_modules/@bigcommerce/citadel/dist/settings/foundation/buttons/settings"; // 2
+
+@import "../../node_modules/@bigcommerce/citadel/dist/vendor/foundation/foundation/functions"; // 3
+@import "../../node_modules/@bigcommerce/citadel/dist/vendor/foundation/foundation/components/global"; // 3
+@import "../../node_modules/@bigcommerce/citadel/dist/vendor/foundation/foundation/components/buttons"; // 3
+
+@import "settings/foundation/global/settings"; // 4
+@import "settings/foundation/buttons/settings"; // 4
+@import "checkout/settings/foundation/buttons/settings"; // Checkout Override
+
+// Components
+// -----------------------------------------------------------------------------
+//
+// 1. Import Citadel's normalize dependency.
+// 2. Import Citadel's components.
+// 2. Import Stencil's component additions and custom components.
+//
+// -----------------------------------------------------------------------------
+
+@import "../../node_modules/@bigcommerce/citadel/dist/components/foundation/buttons/component"; // 2
+@import "components/foundation/buttons/component"; // 3
 
 .checkoutHeader {
     background-image: url(stencilImage('checkout_custom_background_image', 'checkout_custom_background_image_size'));
@@ -63,7 +109,7 @@ a {
 
 // Buttons
 .button {
-    background-color: stencilColor("checkout_buttons_backgroundColor");
+    font-family: $body-font-family;
 }
 
 // Errors
