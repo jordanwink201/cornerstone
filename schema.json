@@ -1588,11 +1588,16 @@
       },
       {
         "type": "heading",
-        "content": "Typography"
+        "content": "Headings"
+      },
+      {
+        "type": "color",
+        "label": "Text Color",
+        "id": "checkout_color-headings"
       },
       {
         "type": "font",
-        "label": "Headings",
+        "label": "Typography",
         "id": "checkout_headings_font",
         "options": [
           {
@@ -1623,8 +1628,17 @@
         ]
       },
       {
+        "type": "heading",
+        "content": "Body"
+      },
+      {
+        "type": "color",
+        "label": "Text Color",
+        "id": "checkout_color-body"
+      },
+      {
         "type": "font",
-        "label": "Body",
+        "label": "Typography",
         "id": "checkout_body_font",
         "options": [
           {
