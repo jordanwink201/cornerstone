@@ -1469,6 +1469,11 @@
         "content": "Header"
       },
       {
+        "type": "color",
+        "label": "Background Color",
+        "id": "checkout_header_backgroundColor"
+      },
+      {
         "type": "checkbox",
         "label": "Use custom background",
         "id": "checkout_use_custom_background"
@@ -1640,14 +1645,35 @@
         ]
       },
       {
-        "type": "color",
-        "label": "Links",
-        "id": "checkout_links_color"
+        "type": "heading",
+        "content": "Body"
       },
       {
         "type": "color",
-        "label": "Buttons",
-        "id": "checkout_buttons_color"
+        "label": "Text Color",
+        "id": "checkout_body_color"
+      },
+      {
+        "type": "heading",
+        "content": "Links"
+      },
+      {
+        "type": "color",
+        "label": "Text Color",
+        "id": "checkout_links_color"
+      },
+      {
+        "type": "heading",
+        "content": "Buttons"
+      },
+      {
+        "type": "color",
+        "label": "Background Color",
+        "id": "checkout_buttons_backgroundColor"
+      },
+      {
+        "type": "heading",
+        "content": "Error States"
       },
       {
         "type": "color",
@@ -1655,8 +1681,12 @@
         "id": "checkout_errors_color"
       },
       {
+        "type": "heading",
+        "content": "Form Fields"
+      },
+      {
         "type": "select",
-        "label": "Form Fields",
+        "label": "Background Color",
         "id": "checkout_formField_backgroundColor",
         "options": [
           {
