@@ -1588,11 +1588,16 @@
       },
       {
         "type": "heading",
-        "content": "Typography"
+        "content": "Headings"
+      },
+      {
+        "type": "color",
+        "label": "Text Color",
+        "id": "checkout_color-headings"
       },
       {
         "type": "font",
-        "label": "Headings",
+        "label": "Typography",
         "id": "checkout_headings_font",
         "options": [
           {
@@ -1623,8 +1628,17 @@
         ]
       },
       {
+        "type": "heading",
+        "content": "Body"
+      },
+      {
+        "type": "color",
+        "label": "Text Color",
+        "id": "checkout_color-body"
+      },
+      {
         "type": "font",
-        "label": "Body",
+        "label": "Typography",
         "id": "checkout_body_font",
         "options": [
           {
@@ -1646,39 +1660,182 @@
       },
       {
         "type": "heading",
-        "content": "Body"
-      },
-      {
-        "type": "color",
-        "label": "Text Color",
-        "id": "checkout_body_color"
-      },
-      {
-        "type": "heading",
         "content": "Links"
       },
       {
         "type": "color",
-        "label": "Text Color",
-        "id": "checkout_links_color"
+        "label": "Link Color",
+        "id": "checkout_color-textLink"
+      },
+      {
+        "type": "color",
+        "label": "Link Color Hover",
+        "id": "checkout_color-textLink--hover"
+      },
+      {
+        "type": "color",
+        "label": "Link Color Active",
+        "id": "checkout_color-textLink--active"
       },
       {
         "type": "heading",
         "content": "Buttons"
       },
       {
+        "type": "heading",
+        "content": "Primary button"
+      },
+      {
         "type": "color",
-        "label": "Background Color",
-        "id": "checkout_buttons_backgroundColor"
+        "label": "Text color",
+        "id": "checkout_button--primary-color"
+      },
+      {
+        "type": "color",
+        "label": "Text hover color",
+        "id": "checkout_button--primary-colorHover"
+      },
+      {
+        "type": "color",
+        "label": "Text active color",
+        "id": "checkout_button--primary-colorActive"
+      },
+      {
+        "type": "color",
+        "label": "Background color",
+        "id": "checkout_button--primary-backgroundColor"
+      },
+      {
+        "type": "color",
+        "label": "Background hover color",
+        "id": "checkout_button--primary-backgroundColorHover"
+      },
+      {
+        "type": "color",
+        "label": "Background active color",
+        "id": "checkout_button--primary-backgroundColorActive"
+      },
+      {
+        "type": "color",
+        "label": "Border color",
+        "id": "checkout_button--primary-borderColor"
+      },
+      {
+        "type": "color",
+        "label": "Border hover color",
+        "id": "checkout_button--primary-borderColorHover"
+      },
+      {
+        "type": "color",
+        "label": "Border active color",
+        "id": "checkout_button--primary-borderColorActive"
       },
       {
         "type": "heading",
-        "content": "Error States"
+        "content": "Tertiary button"
       },
       {
         "type": "color",
-        "label": "Errors",
-        "id": "checkout_errors_color"
+        "label": "Text color",
+        "id": "checkout_button--tertiary-color"
+      },
+      {
+        "type": "color",
+        "label": "Text hover color",
+        "id": "checkout_button--tertiary-colorHover"
+      },
+      {
+        "type": "color",
+        "label": "Text active color",
+        "id": "checkout_button--tertiary-colorActive"
+      },
+      {
+        "type": "color",
+        "label": "Background color",
+        "id": "checkout_button--tertiary-backgroundColor"
+      },
+      {
+        "type": "color",
+        "label": "Background hover color",
+        "id": "checkout_button--tertiary-backgroundColorHover"
+      },
+      {
+        "type": "color",
+        "label": "Background active color",
+        "id": "checkout_button--tertiary-backgroundColorActive"
+      },
+      {
+        "type": "color",
+        "label": "Border color",
+        "id": "checkout_button--tertiary-borderColor"
+      },
+      {
+        "type": "color",
+        "label": "Border hover color",
+        "id": "checkout_button--tertiary-borderColorHover"
+      },
+      {
+        "type": "color",
+        "label": "Border active color",
+        "id": "checkout_button--tertiary-borderColorActive"
+      },
+      {
+        "type": "heading",
+        "content": "Action button"
+      },
+      {
+        "type": "color",
+        "label": "Text color",
+        "id": "checkout_button--action-color"
+      },
+      {
+        "type": "color",
+        "label": "Text hover color",
+        "id": "checkout_button--action-colorHover"
+      },
+      {
+        "type": "color",
+        "label": "Text active color",
+        "id": "checkout_button--action-colorActive"
+      },
+      {
+        "type": "color",
+        "label": "Background color",
+        "id": "checkout_button--action-backgroundColor"
+      },
+      {
+        "type": "color",
+        "label": "Background hover color",
+        "id": "checkout_button--action-backgroundColorHover"
+      },
+      {
+        "type": "color",
+        "label": "Background active color",
+        "id": "checkout_button--action-backgroundColorActive"
+      },
+      {
+        "type": "color",
+        "label": "Border color",
+        "id": "checkout_button--action-borderColor"
+      },
+      {
+        "type": "color",
+        "label": "Border hover color",
+        "id": "checkout_button--action-borderColorHover"
+      },
+      {
+        "type": "color",
+        "label": "Border active color",
+        "id": "checkout_button--action-borderColorActive"
+      },
+      {
+        "type": "heading",
+        "content": "Errors"
+      },
+      {
+        "type": "color",
+        "label": "Text Color",
+        "id": "checkout_color-error"
       },
       {
         "type": "heading",

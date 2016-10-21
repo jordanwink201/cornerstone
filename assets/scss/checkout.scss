@@ -2,102 +2,52 @@
 // Stencil Checkout  - Customize the checkout experience
 // =============================================================================
 
+// Tools
+// -----------------------------------------------------------------------------
+//
+// 1. Import Citadel's toolkit for use.
+//
+// -----------------------------------------------------------------------------
+
 @import "../../node_modules/@bigcommerce/citadel/dist/tools/toolkit"; // 1
+
+// Settings
+// -----------------------------------------------------------------------------
+//
+// 1. Stencil global settings get imported first.
+// 2. Import all Citadel and Foundation settings.
+// 3. Import Citadel's version of foundation.
+//      - This enables the ability to "null" variables in the Stencil settings.
+// 4. Import Stencil's component settings overrides.
+// 5. Import Checkout's component settings overrides.
+//
+// -----------------------------------------------------------------------------
+
 @import "settings/global/global"; // 1
 
 @import "../../node_modules/@bigcommerce/citadel/dist/settings/global/global"; // 2
 
-.checkoutHeader {
-    background-image: url(stencilImage('checkout_custom_background_image', 'checkout_custom_background_image_size'));
-    background-size: cover;
-    background-color: stencilColor("checkout_header_backgroundColor");
+@import "../../node_modules/@bigcommerce/citadel/dist/settings/foundation/global/settings"; // 2
+@import "../../node_modules/@bigcommerce/citadel/dist/settings/foundation/type/settings"; // 2
+@import "../../node_modules/@bigcommerce/citadel/dist/settings/foundation/buttons/settings"; // 2
 
-    // Desktop Only
-    @include breakpoint("medium") {
-        text-align: stencilString("checkout_logo_position");
-    }
-}
+@import "../../node_modules/@bigcommerce/citadel/dist/vendor/foundation/foundation/functions"; // 3
+@import "../../node_modules/@bigcommerce/citadel/dist/vendor/foundation/foundation/components/global"; // 3
+@import "../../node_modules/@bigcommerce/citadel/dist/vendor/foundation/foundation/components/buttons"; // 3
 
-// Main content
-.ng-checkout-container {
-    background-color: stencilColor("checkout_main_backgroundColor");
-}
+@import "settings/foundation/global/settings"; // 4
 
-// Order Summary, Mobile Order Summary, Modal Order Summary
-.cart,
-.cartDrawer,
-.cart-modal-body,
-.cart-modal-header {
-    background-color: stencilColor("checkout_cart_backgroundColor");
-}
+@import "settings/checkout/foundation/foundation"; // 5
 
-// Typography
-$headings-font-family:           stencilFontFamily("checkout_headings_font"), Arial, Helvetica, sans-serif;
-$headings-font-weight:           stencilFontWeight("checkout_headings_font");
+// Components
+// -----------------------------------------------------------------------------
+//
+// 1. Import Citadel's components.
+// 2. Import Stencil's component additions and custom components.
+// 3. Import Checkout's component additions and custom components.
+//
+// -----------------------------------------------------------------------------
 
-$body-font-family:               stencilFontFamily("checkout_body_font"), Arial, Helvetica, sans-serif;
-$body-font-weight:               stencilFontFamily("checkout_body_font");
+@import "../../node_modules/@bigcommerce/citadel/dist/components/foundation/buttons/component"; // 1
 
-// Headings
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: $headings-font-family;
-    font-weight: $headings-font-weight;
-}
-
-// Body
-body {
-    font-family: $body-font-family;
-    font-weight: $body-font-weight;
-    color: stencilColor("checkout_body_color");
-}
-
-// Links
-a {
-    color: stencilColor("checkout_links_color");
-}
-
-// Buttons
-.button {
-    background-color: stencilColor("checkout_buttons_backgroundColor");
-}
-
-// Errors
-.form-field--error {
-
-    .form-input,
-    .form-select,
-    .form-checkbox + .form-label::before,
-    .form-radio + .form-label::before,
-    .form-prefixPostfix-label {
-        border-color: stencilColor("checkout_errors_color");
-    }
-
-    .form-field-error,
-    .form-inlineMessage {
-        color: stencilColor("checkout_errors_color");
-    }
-
-    // Depth need to style svg with validation state
-    // scss-lint:disable SelectorDepth
-    .form-input-indicator > svg {
-        fill: stencilColor("checkout_errors_color");
-    }
-    // scss-lint:enable SelectorDepth
-}
-
-// Form Fields
-.form-input,
-.form-select {
-    background-color: stencilString("checkout_formField_backgroundColor");
-}
-
-.form-select {
-    &:hover {
-        background-color: stencilString("checkout_formField_backgroundColor");
-    }
-}
+@import "components/stencil/checkout/component"; // 3
