@@ -4,7 +4,7 @@
 
 // Header
 .checkoutHeader {
-    background-image: url(stencilImage('checkout_custom_background_image', 'checkout_custom_background_image_size'));
+    background-image: url(stencilImage("checkout_custom_background_image", "checkout_custom_background_image_size"));
     background-size: cover;
 
     // Logo
@@ -23,13 +23,6 @@
     background-color: stencilColor("checkout_cart_backgroundColor");
 }
 
-// Typography
-$headings-font-family:           stencilFontFamily("checkout_headings_font"), Arial, Helvetica, sans-serif;
-$headings-font-weight:           stencilFontWeight("checkout_headings_font");
-
-$body-font-family:               stencilFontFamily("checkout_body_font"), Arial, Helvetica, sans-serif;
-$body-font-weight:               stencilFontFamily("checkout_body_font");
-
 // Headings
 h1,
 h2,
@@ -37,14 +30,16 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: $headings-font-family;
-    font-weight: $headings-font-weight;
+    color: stencilColor("checkout_color-headings");
+    font-family: stencilFontFamily("checkout_headings_font"), Arial, Helvetica, sans-serif;
+    font-weight: stencilFontWeight("checkout_headings_font");
 }
 
 // Body
 body {
-    font-family: $body-font-family;
-    font-weight: $body-font-weight;
+    color: stencilColor("checkout_color-body");
+    font-family: stencilFontFamily("checkout_body_font"), Arial, Helvetica, sans-serif;
+    font-weight: stencilFontFamily("checkout_body_font");
 }
 
 // Links
@@ -63,7 +58,7 @@ a {
 
 // Buttons
 .button {
-    font-family: $body-font-family;
+    font-family: stencilFontFamily("checkout_body_font"), Arial, Helvetica, sans-serif;
 }
 
 // Errors
