@@ -1,0 +1,102 @@
+// =============================================================================
+// CHECKOUT (CSS)
+// =============================================================================
+
+// Header
+.checkoutHeader {
+    background-image: url(stencilImage('checkout_custom_background_image', 'checkout_custom_background_image_size'));
+    background-size: cover;
+
+    // Logo
+    @include breakpoint("medium") {
+        text-align: stencilString("checkout_logo_position");
+    }
+}
+
+// Main content area
+.ng-checkout-container {
+    background-color: stencilColor("checkout_main_backgroundColor");
+}
+
+// Order Summary
+.cart {
+    background-color: stencilColor("checkout_cart_backgroundColor");
+}
+
+// Typography
+$headings-font-family:           stencilFontFamily("checkout_headings_font"), Arial, Helvetica, sans-serif;
+$headings-font-weight:           stencilFontWeight("checkout_headings_font");
+
+$body-font-family:               stencilFontFamily("checkout_body_font"), Arial, Helvetica, sans-serif;
+$body-font-weight:               stencilFontFamily("checkout_body_font");
+
+// Headings
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $headings-font-family;
+    font-weight: $headings-font-weight;
+}
+
+// Body
+body {
+    font-family: $body-font-family;
+    font-weight: $body-font-weight;
+}
+
+// Links
+a {
+    color: stencilColor("checkout_color-textLink");
+
+    &:active {
+        color: stencilColor("checkout_color-textLink--active");
+    }
+
+    &:hover,
+    &:focus {
+        color: stencilColor("checkout_color-textLink--hover");
+    }
+}
+
+// Buttons
+.button {
+    font-family: $body-font-family;
+}
+
+// Errors
+.form-field--error {
+
+    .form-input,
+    .form-select,
+    .form-checkbox + .form-label::before,
+    .form-radio + .form-label::before,
+    .form-prefixPostfix-label {
+        border-color: stencilColor("checkout_color-error");
+    }
+
+    .form-field-error,
+    .form-inlineMessage {
+        color: stencilColor("checkout_color-error");
+    }
+
+    // scss-lint:disable SelectorDepth
+    .form-input-indicator > svg {
+        fill: stencilColor("checkout_color-error");
+    }
+    // scss-lint:enable SelectorDepth
+}
+
+// Form Fields
+.form-input,
+.form-select {
+    background-color: stencilString("checkout_formField_backgroundColor");
+}
+
+.form-select {
+    &:hover {
+        background-color: stencilString("checkout_formField_backgroundColor");
+    }
+}

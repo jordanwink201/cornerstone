@@ -1,5 +1,5 @@
 // =============================================================================
-// BUTTONS (Settings)
+// CHECKOUT BUTTONS (Settings)
 // =============================================================================
 
 
@@ -19,55 +19,55 @@ $exportCSS--buttons:                    true; // 1
 // Button Style variables
 // -----------------------------------------------------------------------------
 
-$buttonStyle-default-color:                   stencilColor("checkout-button--default-color");
-$buttonStyle-default-colorHover:              stencilColor("checkout-button--default-colorHover");
-$buttonStyle-default-colorActive:             stencilColor("checkout-button--default-colorActive");
-$buttonStyle-default-backgroundColor:         stencilColor("checkout-button--default-backgroundColor");
-$buttonStyle-default-backgroundColorHover:    stencilColor("checkout-button--default-backgroundColorHover");
-$buttonStyle-default-backgroundColorActive:   stencilColor("checkout-button--default-backgroundColorActive");
-$buttonStyle-default-borderColor:             stencilColor("checkout-button--default-borderColor");
-$buttonStyle-default-borderColorHover:        stencilColor("checkout-button--default-borderColorHover");
-$buttonStyle-default-borderColorActive:       stencilColor("checkout-button--default-borderColorActive");
+$buttonStyle-default-color:                   null;
+$buttonStyle-default-colorHover:              null;
+$buttonStyle-default-colorActive:             null;
+$buttonStyle-default-backgroundColor:         null;
+$buttonStyle-default-backgroundColorHover:    null;
+$buttonStyle-default-backgroundColorActive:   null;
+$buttonStyle-default-borderColor:             null;
+$buttonStyle-default-borderColorHover:        null;
+$buttonStyle-default-borderColorActive:       null;
 
-$buttonStyle-primary-color:                   stencilColor("checkout-button--primary-color");
-$buttonStyle-primary-colorHover:              stencilColor("checkout-button--primary-colorHover");
-$buttonStyle-primary-colorActive:             stencilColor("checkout-button--primary-colorActive");
-$buttonStyle-primary-backgroundColor:         stencilColor("checkout-button--primary-backgroundColor");
-$buttonStyle-primary-backgroundColorHover:    stencilColor("checkout-button--primary-backgroundColorHover");
-$buttonStyle-primary-backgroundColorActive:   stencilColor("checkout-button--primary-backgroundColorActive");
-$buttonStyle-primary-borderColor:             stencilColor("checkout-button--primary-borderColor");
-$buttonStyle-primary-borderColorHover:        stencilColor("checkout-button--primary-borderColorHover");
-$buttonStyle-primary-borderColorActive:       stencilColor("checkout-button--primary-borderColorActive");
+$buttonStyle-primary-color:                   stencilColor("checkout_button--primary-color");
+$buttonStyle-primary-colorHover:              stencilColor("checkout_button--primary-colorHover");
+$buttonStyle-primary-colorActive:             stencilColor("checkout_button--primary-colorActive");
+$buttonStyle-primary-backgroundColor:         stencilColor("checkout_button--primary-backgroundColor");
+$buttonStyle-primary-backgroundColorHover:    stencilColor("checkout_button--primary-backgroundColorHover");
+$buttonStyle-primary-backgroundColorActive:   stencilColor("checkout_button--primary-backgroundColorActive");
+$buttonStyle-primary-borderColor:             stencilColor("checkout_button--primary-borderColor");
+$buttonStyle-primary-borderColorHover:        stencilColor("checkout_button--primary-borderColorHover");
+$buttonStyle-primary-borderColorActive:       stencilColor("checkout_button--primary-borderColorActive");
 
-$buttonStyle-disabled-color:                  stencilColor("checkout-button--disabled-color");
-$buttonStyle-disabled-colorHover:             stencilColor("checkout-button--disabled-colorHover");
-$buttonStyle-disabled-colorActive:            stencilColor("checkout-button--disabled-colorActive");
-$buttonStyle-disabled-backgroundColor:        stencilColor("checkout-button--disabled-backgroundColor");
-$buttonStyle-disabled-backgroundColorHover:   stencilColor("checkout-button--disabled-backgroundColorHover");
-$buttonStyle-disabled-backgroundColorActive:  stencilColor("checkout-button--disabled-backgroundColorActive");
-$buttonStyle-disabled-borderColor:            stencilColor("checkout-button--disabled-borderColor");
-$buttonStyle-disabled-borderColorHover:       stencilColor("checkout-button--disabled-borderColorHover");
-$buttonStyle-disabled-borderColorActive:      stencilColor("checkout-button--disabled-borderColorActive");
+$buttonStyle-disabled-color:                  null;
+$buttonStyle-disabled-colorHover:             null;
+$buttonStyle-disabled-colorActive:            null;
+$buttonStyle-disabled-backgroundColor:        null;
+$buttonStyle-disabled-backgroundColorHover:   null;
+$buttonStyle-disabled-backgroundColorActive:  null;
+$buttonStyle-disabled-borderColor:            null;
+$buttonStyle-disabled-borderColorHover:       null;
+$buttonStyle-disabled-borderColorActive:      null;
 
-$buttonStyle-tertiary-color:                  stencilColor("checkout-button--tertiary-color");
-$buttonStyle-tertiary-colorHover:             stencilColor("checkout-button--tertiary-colorHover");
-$buttonStyle-tertiary-colorActive:            stencilColor("checkout-button--tertiary-colorActive");
-$buttonStyle-tertiary-backgroundColor:        stencilColor("checkout-button--tertiary-backgroundColor");
-$buttonStyle-tertiary-backgroundColorHover:   stencilColor("checkout-button--tertiary-backgroundColorHover");
-$buttonStyle-tertiary-backgroundColorActive:  stencilColor("checkout-button--tertiary-backgroundColorActive");
-$buttonStyle-tertiary-borderColor:            stencilColor("checkout-button--tertiary-borderColor");
-$buttonStyle-tertiary-borderColorHover:       stencilColor("checkout-button--tertiary-borderColorHover");
-$buttonStyle-tertiary-borderColorActive:      stencilColor("checkout-button--tertiary-borderColorActive");
+$buttonStyle-tertiary-color:                  stencilColor("checkout_button--tertiary-color");
+$buttonStyle-tertiary-colorHover:             stencilColor("checkout_button--tertiary-colorHover");
+$buttonStyle-tertiary-colorActive:            stencilColor("checkout_button--tertiary-colorActive");
+$buttonStyle-tertiary-backgroundColor:        stencilColor("checkout_button--tertiary-backgroundColor");
+$buttonStyle-tertiary-backgroundColorHover:   stencilColor("checkout_button--tertiary-backgroundColorHover");
+$buttonStyle-tertiary-backgroundColorActive:  stencilColor("checkout_button--tertiary-backgroundColorActive");
+$buttonStyle-tertiary-borderColor:            stencilColor("checkout_button--tertiary-borderColor");
+$buttonStyle-tertiary-borderColorHover:       stencilColor("checkout_button--tertiary-borderColorHover");
+$buttonStyle-tertiary-borderColorActive:      stencilColor("checkout_button--tertiary-borderColorActive");
 
-$buttonStyle-action-color:                    stencilColor("checkout-button--action-color");
-$buttonStyle-action-colorHover:               stencilColor("checkout-button--action-colorHover");
-$buttonStyle-action-colorActive:              stencilColor("checkout-button--action-colorActive");
-$buttonStyle-action-backgroundColor:          stencilColor("checkout-button--action-backgroundColor");
-$buttonStyle-action-backgroundColorHover:     stencilColor("checkout-button--action-backgroundColorHover");
-$buttonStyle-action-backgroundColorActive:    stencilColor("checkout-button--action-backgroundColorActive");
-$buttonStyle-action-borderColor:              stencilColor("checkout-button--action-borderColor");
-$buttonStyle-action-borderColorHover:         stencilColor("checkout-button--action-borderColorHover");
-$buttonStyle-action-borderColorActive:        stencilColor("checkout-button--action-borderColorActive");
+$buttonStyle-action-color:                    stencilColor("checkout_button--action-color");
+$buttonStyle-action-colorHover:               stencilColor("checkout_button--action-colorHover");
+$buttonStyle-action-colorActive:              stencilColor("checkout_button--action-colorActive");
+$buttonStyle-action-backgroundColor:          stencilColor("checkout_button--action-backgroundColor");
+$buttonStyle-action-backgroundColorHover:     stencilColor("checkout_button--action-backgroundColorHover");
+$buttonStyle-action-backgroundColorActive:    stencilColor("checkout_button--action-backgroundColorActive");
+$buttonStyle-action-borderColor:              stencilColor("checkout_button--action-borderColor");
+$buttonStyle-action-borderColorHover:         stencilColor("checkout_button--action-borderColorHover");
+$buttonStyle-action-borderColorActive:        stencilColor("checkout_button--action-borderColorActive");
 
 
 // Size Modifiers
