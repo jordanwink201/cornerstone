@@ -4,6 +4,7 @@
 
 // Header
 .checkoutHeader {
+    background-color: stencilColor("optimizedCheckout_header_backgroundColor");
     background-image: url(stencilImage("optimizedCheckout_custom_background_image", "optimizedCheckout_custom_background_image_size"));
     background-size: cover;
 
@@ -18,8 +19,11 @@ body {
     background-color: $body-bg;
 }
 
-// Order Summary
-.cart {
+// Order Summary, Mobile Order Summary, Modal Order Summary
+.cart,
+.cartDrawer,
+.cart-modal-body,
+.cart-modal-header {
     background-color: stencilColor("optimizedCheckout_cart_backgroundColor");
 }
 
