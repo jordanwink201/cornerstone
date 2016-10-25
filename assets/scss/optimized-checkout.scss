@@ -8,19 +8,19 @@
 @import "../../node_modules/@bigcommerce/citadel/dist/settings/global/global"; // 2
 
 .checkoutHeader {
-    background-image: url(stencilImage('checkout_custom_background_image', 'checkout_custom_background_image_size'));
+    background-image: url(stencilImage('optimizedCheckout_custom_background_image', 'optimizedCheckout_custom_background_image_size'));
     background-size: cover;
-    background-color: stencilColor("checkout_header_backgroundColor");
+    background-color: stencilColor("optimizedCheckout_header_backgroundColor");
 
     // Desktop Only
     @include breakpoint("medium") {
-        text-align: stencilString("checkout_logo_position");
+        text-align: stencilString("optimizedCheckout_logo_position");
     }
 }
 
 // Main content
 .ng-checkout-container {
-    background-color: stencilColor("checkout_main_backgroundColor");
+    background-color: stencilColor("optimizedCheckout_main_backgroundColor");
 }
 
 // Order Summary, Mobile Order Summary, Modal Order Summary
@@ -28,15 +28,15 @@
 .cartDrawer,
 .cart-modal-body,
 .cart-modal-header {
-    background-color: stencilColor("checkout_cart_backgroundColor");
+    background-color: stencilColor("optimizedCheckout_cart_backgroundColor");
 }
 
 // Typography
-$headings-font-family:           stencilFontFamily("checkout_headings_font"), Arial, Helvetica, sans-serif;
-$headings-font-weight:           stencilFontWeight("checkout_headings_font");
+$headings-font-family:           stencilFontFamily("optimizedCheckout_headings_font"), Arial, Helvetica, sans-serif;
+$headings-font-weight:           stencilFontWeight("optimizedCheckout_headings_font");
 
-$body-font-family:               stencilFontFamily("checkout_body_font"), Arial, Helvetica, sans-serif;
-$body-font-weight:               stencilFontFamily("checkout_body_font");
+$body-font-family:               stencilFontFamily("optimizedCheckout_body_font"), Arial, Helvetica, sans-serif;
+$body-font-weight:               stencilFontFamily("optimizedCheckout_body_font");
 
 // Headings
 h1,
@@ -53,17 +53,17 @@ h6 {
 body {
     font-family: $body-font-family;
     font-weight: $body-font-weight;
-    color: stencilColor("checkout_body_color");
+    color: stencilColor("optimizedCheckout_body_color");
 }
 
 // Links
 a {
-    color: stencilColor("checkout_links_color");
+    color: stencilColor("optimizedCheckout_links_color");
 }
 
 // Buttons
 .button {
-    background-color: stencilColor("checkout_buttons_backgroundColor");
+    background-color: stencilColor("optimizedCheckout_buttons_backgroundColor");
 }
 
 // Errors
@@ -74,18 +74,18 @@ a {
     .form-checkbox + .form-label::before,
     .form-radio + .form-label::before,
     .form-prefixPostfix-label {
-        border-color: stencilColor("checkout_errors_color");
+        border-color: stencilColor("optimizedCheckout_errors_color");
     }
 
     .form-field-error,
     .form-inlineMessage {
-        color: stencilColor("checkout_errors_color");
+        color: stencilColor("optimizedCheckout_errors_color");
     }
 
     // Depth need to style svg with validation state
     // scss-lint:disable SelectorDepth
     .form-input-indicator > svg {
-        fill: stencilColor("checkout_errors_color");
+        fill: stencilColor("optimizedCheckout_errors_color");
     }
     // scss-lint:enable SelectorDepth
 }
@@ -93,11 +93,11 @@ a {
 // Form Fields
 .form-input,
 .form-select {
-    background-color: stencilString("checkout_formField_backgroundColor");
+    background-color: stencilString("optimizedCheckout_formField_backgroundColor");
 }
 
 .form-select {
     &:hover {
-        background-color: stencilString("checkout_formField_backgroundColor");
+        background-color: stencilString("optimizedCheckout_formField_backgroundColor");
     }
 }
