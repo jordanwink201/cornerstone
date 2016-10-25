@@ -14,8 +14,8 @@
 }
 
 // Main content area
-.ng-checkout-container {
-    background-color: stencilColor("checkout_main_backgroundColor");
+body {
+    background-color: $body-bg;
 }
 
 // Order Summary
@@ -36,17 +36,14 @@ h6 {
 }
 
 // Body
-body {
-    color: stencilColor("checkout_color-body");
+abbr,
+acronym,
+body,
+.form-label {
+    color: $body-font-color;
     font-family: stencilFontFamily("checkout_body_font"), Arial, Helvetica, sans-serif;
     font-weight: stencilFontFamily("checkout_body_font");
 }
-
-// We use these to style anchors
-$anchor-text-decoration:               none;
-$anchor-text-decoration-hover:         none;
-$anchor-font-color:                    stencilColor("checkout_color-textLink");
-$anchor-font-color-hover:              stencilColor("checkout_color-textLink--hover");
 
 // Links <a>
 // -------------------------------------------------------------------------

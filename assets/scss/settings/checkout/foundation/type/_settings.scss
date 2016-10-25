@@ -1,0 +1,26 @@
+// =============================================================================
+// TYPE (Settings)
+// =============================================================================
+
+
+// Stencil Variables
+// -----------------------------------------------------------------------------
+//
+// These scoped variables are created by Bigcommerce.
+// All variables that are not from Foundation should be placed here.
+//
+// 1. Choose whether to include the Bigcommerce class names.
+//
+// -----------------------------------------------------------------------------
+
+$exportCSS--type:               true; // 1
+
+// We use these to control various global styles
+$body-bg:                              stencilColor("checkout_main_backgroundColor");
+$body-font-color:                      stencilColor("checkout_color-body");
+
+// We use these to style anchors
+$anchor-text-decoration:               none;
+$anchor-text-decoration-hover:         none;
+$anchor-font-color:                    stencilColor("checkout_color-textLink");
+$anchor-font-color-hover:              stencilColor("checkout_color-textLink--hover");
