@@ -16,11 +16,11 @@
 $exportCSS--type:               true; // 1
 
 // We use these to control various global styles
-$body-bg:                              stencilColor("checkout_main_backgroundColor");
-$body-font-color:                      stencilColor("checkout_color-body");
+$body-bg:                              stencilColor("optimizedCheckout_main_backgroundColor");
+$body-font-color:                      stencilColor("optimizedCheckout_color-body");
 
 // We use these to style anchors
 $anchor-text-decoration:               none;
 $anchor-text-decoration-hover:         none;
-$anchor-font-color:                    stencilColor("checkout_color-textLink");
-$anchor-font-color-hover:              stencilColor("checkout_color-textLink--hover");
+$anchor-font-color:                    stencilColor("optimizedCheckout_color-textLink");
+$anchor-font-color-hover:              stencilColor("optimizedCheckout_color-textLink--hover");

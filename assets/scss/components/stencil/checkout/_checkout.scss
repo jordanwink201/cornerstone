@@ -4,12 +4,12 @@
 
 // Header
 .checkoutHeader {
-    background-image: url(stencilImage("checkout_custom_background_image", "checkout_custom_background_image_size"));
+    background-image: url(stencilImage("optimizedCheckout_custom_background_image", "optimizedCheckout_custom_background_image_size"));
     background-size: cover;
 
     // Logo
     @include breakpoint("medium") {
-        text-align: stencilString("checkout_logo_position");
+        text-align: stencilString("optimizedCheckout_logo_position");
     }
 }
 
@@ -20,7 +20,7 @@ body {
 
 // Order Summary
 .cart {
-    background-color: stencilColor("checkout_cart_backgroundColor");
+    background-color: stencilColor("optimizedCheckout_cart_backgroundColor");
 }
 
 // Headings
@@ -30,9 +30,9 @@ h3,
 h4,
 h5,
 h6 {
-    color: stencilColor("checkout_color-headings");
-    font-family: stencilFontFamily("checkout_headings_font"), Arial, Helvetica, sans-serif;
-    font-weight: stencilFontWeight("checkout_headings_font");
+    color: stencilColor("optimizedCheckout_color-headings");
+    font-family: stencilFontFamily("optimizedCheckout_headings_font"), Arial, Helvetica, sans-serif;
+    font-weight: stencilFontWeight("optimizedCheckout_headings_font");
 }
 
 // Body
@@ -41,8 +41,8 @@ acronym,
 body,
 .form-label {
     color: $body-font-color;
-    font-family: stencilFontFamily("checkout_body_font"), Arial, Helvetica, sans-serif;
-    font-weight: stencilFontFamily("checkout_body_font");
+    font-family: stencilFontFamily("optimizedCheckout_body_font"), Arial, Helvetica, sans-serif;
+    font-weight: stencilFontFamily("optimizedCheckout_body_font");
 }
 
 // Links <a>
@@ -64,7 +64,7 @@ a {
 
 // Buttons
 .button {
-    font-family: stencilFontFamily("checkout_body_font"), Arial, Helvetica, sans-serif;
+    font-family: stencilFontFamily("optimizedCheckout_body_font"), Arial, Helvetica, sans-serif;
 }
 
 // Errors
@@ -75,17 +75,17 @@ a {
     .form-checkbox + .form-label::before,
     .form-radio + .form-label::before,
     .form-prefixPostfix-label {
-        border-color: stencilColor("checkout_color-error");
+        border-color: stencilColor("optimizedCheckout_color-error");
     }
 
     .form-field-error,
     .form-inlineMessage {
-        color: stencilColor("checkout_color-error");
+        color: stencilColor("optimizedCheckout_color-error");
     }
 
     // scss-lint:disable SelectorDepth
     .form-input-indicator > svg {
-        fill: stencilColor("checkout_color-error");
+        fill: stencilColor("optimizedCheckout_color-error");
     }
     // scss-lint:enable SelectorDepth
 }
@@ -93,11 +93,11 @@ a {
 // Form Fields
 .form-input,
 .form-select {
-    background-color: stencilString("checkout_formField_backgroundColor");
+    background-color: stencilString("optimizedCheckout_formField_backgroundColor");
 }
 
 .form-select {
     &:hover {
-        background-color: stencilString("checkout_formField_backgroundColor");
+        background-color: stencilString("optimizedCheckout_formField_backgroundColor");
     }
 }

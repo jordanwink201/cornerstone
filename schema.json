@@ -1462,7 +1462,7 @@
     ]
   },
   {
-    "name": "Checkout",
+    "name": "Optimized Checkout",
     "settings": [
       {
         "type": "heading",
@@ -1471,27 +1471,27 @@
       {
         "type": "color",
         "label": "Background Color",
-        "id": "checkout_header_backgroundColor"
+        "id": "optimizedCheckout_header_backgroundColor"
       },
       {
         "type": "checkbox",
         "label": "Use custom background",
-        "id": "checkout_use_custom_background"
+        "id": "optimizedCheckout_use_custom_background"
       },
       {
         "type": "image",
         "label": "1000 x 400px recommended",
-        "reference": "checkout_use_custom_background",
+        "reference": "optimizedCheckout_use_custom_background",
         "reference_default": false,
-        "id": "checkout_custom_background_image"
+        "id": "optimizedCheckout_custom_background_image"
       },
       {
         "type": "imageDimension",
         "description": "Please specify a maximum image size for desktop display. We'll automatically scale down the image for smaller devices.",
         "label": "",
-        "reference": "checkout_use_custom_background",
+        "reference": "optimizedCheckout_use_custom_background",
         "reference_default": false,
-        "id": "checkout_custom_background_image_size",
+        "id": "optimizedCheckout_custom_background_image_size",
         "options": [
           {
             "value": "1000x400",
@@ -1510,7 +1510,7 @@
       {
         "type": "select",
         "label": "Use Custom Logo",
-        "id": "checkout_use_custom_logo",
+        "id": "optimizedCheckout_use_custom_logo",
         "options": [
           {
             "value": "none",
@@ -1525,18 +1525,18 @@
       {
         "type": "image",
         "label": "250 x 100px recommended",
-        "reference": "checkout_use_custom_logo",
+        "reference": "optimizedCheckout_use_custom_logo",
         "reference_default": "none",
         "force_reload": true,
-        "id": "checkout_custom_logo_image"
+        "id": "optimizedCheckout_custom_logo_image"
       },
       {
         "type": "imageDimension",
         "description": "Please specify a maximum image size for desktop display. We'll automatically scale down the image for smaller devices.",
         "label": "",
-        "reference": "checkout_use_custom_logo",
+        "reference": "optimizedCheckout_use_custom_logo",
         "reference_default": "none",
-        "id": "checkout_custom_logo_image_size",
+        "id": "optimizedCheckout_custom_logo_image_size",
         "force_reload": true,
         "options": [
           {
@@ -1552,7 +1552,7 @@
       {
         "type": "select",
         "label": "Position",
-        "id": "checkout_logo_position",
+        "id": "optimizedCheckout_logo_position",
         "options": [
           {
             "value": "left",
@@ -1575,7 +1575,7 @@
       {
         "type": "color",
         "label": "Background color",
-        "id": "checkout_main_backgroundColor"
+        "id": "optimizedCheckout_main_backgroundColor"
       },
       {
         "type": "heading",
@@ -1584,7 +1584,7 @@
       {
         "type": "color",
         "label": "Background color",
-        "id": "checkout_cart_backgroundColor"
+        "id": "optimizedCheckout_cart_backgroundColor"
       },
       {
         "type": "heading",
@@ -1593,12 +1593,12 @@
       {
         "type": "color",
         "label": "Text Color",
-        "id": "checkout_color-headings"
+        "id": "optimizedCheckout_color-headings"
       },
       {
         "type": "font",
         "label": "Typography",
-        "id": "checkout_headings_font",
+        "id": "optimizedCheckout_headings_font",
         "options": [
           {
             "group": "Open Sans",
@@ -1634,12 +1634,12 @@
       {
         "type": "color",
         "label": "Text Color",
-        "id": "checkout_color-body"
+        "id": "optimizedCheckout_color-body"
       },
       {
         "type": "font",
         "label": "Typography",
-        "id": "checkout_body_font",
+        "id": "optimizedCheckout_body_font",
         "options": [
           {
             "group": "Open Sans",
@@ -1675,12 +1675,12 @@
       {
         "type": "color",
         "label": "Link Color",
-        "id": "checkout_color-textLink"
+        "id": "optimizedCheckout_color-textLink"
       },
       {
         "type": "color",
         "label": "Link Color Hover",
-        "id": "checkout_color-textLink--hover"
+        "id": "optimizedCheckout_color-textLink--hover"
       },
       {
         "type": "heading",
@@ -1693,47 +1693,47 @@
       {
         "type": "color",
         "label": "Text color",
-        "id": "checkout_button--primary-color"
+        "id": "optimizedCheckout_button--primary-color"
       },
       {
         "type": "color",
         "label": "Text hover color",
-        "id": "checkout_button--primary-colorHover"
+        "id": "optimizedCheckout_button--primary-colorHover"
       },
       {
         "type": "color",
         "label": "Text active color",
-        "id": "checkout_button--primary-colorActive"
+        "id": "optimizedCheckout_button--primary-colorActive"
       },
       {
         "type": "color",
         "label": "Background color",
-        "id": "checkout_button--primary-backgroundColor"
+        "id": "optimizedCheckout_button--primary-backgroundColor"
       },
       {
         "type": "color",
         "label": "Background hover color",
-        "id": "checkout_button--primary-backgroundColorHover"
+        "id": "optimizedCheckout_button--primary-backgroundColorHover"
       },
       {
         "type": "color",
         "label": "Background active color",
-        "id": "checkout_button--primary-backgroundColorActive"
+        "id": "optimizedCheckout_button--primary-backgroundColorActive"
       },
       {
         "type": "color",
         "label": "Border color",
-        "id": "checkout_button--primary-borderColor"
+        "id": "optimizedCheckout_button--primary-borderColor"
       },
       {
         "type": "color",
         "label": "Border hover color",
-        "id": "checkout_button--primary-borderColorHover"
+        "id": "optimizedCheckout_button--primary-borderColorHover"
       },
       {
         "type": "color",
         "label": "Border active color",
-        "id": "checkout_button--primary-borderColorActive"
+        "id": "optimizedCheckout_button--primary-borderColorActive"
       },
       {
         "type": "heading",
@@ -1742,47 +1742,47 @@
       {
         "type": "color",
         "label": "Text color",
-        "id": "checkout_button--tertiary-color"
+        "id": "optimizedCheckout_button--tertiary-color"
       },
       {
         "type": "color",
         "label": "Text hover color",
-        "id": "checkout_button--tertiary-colorHover"
+        "id": "optimizedCheckout_button--tertiary-colorHover"
       },
       {
         "type": "color",
         "label": "Text active color",
-        "id": "checkout_button--tertiary-colorActive"
+        "id": "optimizedCheckout_button--tertiary-colorActive"
       },
       {
         "type": "color",
         "label": "Background color",
-        "id": "checkout_button--tertiary-backgroundColor"
+        "id": "optimizedCheckout_button--tertiary-backgroundColor"
       },
       {
         "type": "color",
         "label": "Background hover color",
-        "id": "checkout_button--tertiary-backgroundColorHover"
+        "id": "optimizedCheckout_button--tertiary-backgroundColorHover"
       },
       {
         "type": "color",
         "label": "Background active color",
-        "id": "checkout_button--tertiary-backgroundColorActive"
+        "id": "optimizedCheckout_button--tertiary-backgroundColorActive"
       },
       {
         "type": "color",
         "label": "Border color",
-        "id": "checkout_button--tertiary-borderColor"
+        "id": "optimizedCheckout_button--tertiary-borderColor"
       },
       {
         "type": "color",
         "label": "Border hover color",
-        "id": "checkout_button--tertiary-borderColorHover"
+        "id": "optimizedCheckout_button--tertiary-borderColorHover"
       },
       {
         "type": "color",
         "label": "Border active color",
-        "id": "checkout_button--tertiary-borderColorActive"
+        "id": "optimizedCheckout_button--tertiary-borderColorActive"
       },
       {
         "type": "heading",
@@ -1791,47 +1791,47 @@
       {
         "type": "color",
         "label": "Text color",
-        "id": "checkout_button--action-color"
+        "id": "optimizedCheckout_button--action-color"
       },
       {
         "type": "color",
         "label": "Text hover color",
-        "id": "checkout_button--action-colorHover"
+        "id": "optimizedCheckout_button--action-colorHover"
       },
       {
         "type": "color",
         "label": "Text active color",
-        "id": "checkout_button--action-colorActive"
+        "id": "optimizedCheckout_button--action-colorActive"
       },
       {
         "type": "color",
         "label": "Background color",
-        "id": "checkout_button--action-backgroundColor"
+        "id": "optimizedCheckout_button--action-backgroundColor"
       },
       {
         "type": "color",
         "label": "Background hover color",
-        "id": "checkout_button--action-backgroundColorHover"
+        "id": "optimizedCheckout_button--action-backgroundColorHover"
       },
       {
         "type": "color",
         "label": "Background active color",
-        "id": "checkout_button--action-backgroundColorActive"
+        "id": "optimizedCheckout_button--action-backgroundColorActive"
       },
       {
         "type": "color",
         "label": "Border color",
-        "id": "checkout_button--action-borderColor"
+        "id": "optimizedCheckout_button--action-borderColor"
       },
       {
         "type": "color",
         "label": "Border hover color",
-        "id": "checkout_button--action-borderColorHover"
+        "id": "optimizedCheckout_button--action-borderColorHover"
       },
       {
         "type": "color",
         "label": "Border active color",
-        "id": "checkout_button--action-borderColorActive"
+        "id": "optimizedCheckout_button--action-borderColorActive"
       },
       {
         "type": "heading",
@@ -1840,7 +1840,7 @@
       {
         "type": "color",
         "label": "Text Color",
-        "id": "checkout_color-error"
+        "id": "optimizedCheckout_color-error"
       },
       {
         "type": "heading",
@@ -1849,7 +1849,7 @@
       {
         "type": "select",
         "label": "Background Color",
-        "id": "checkout_formField_backgroundColor",
+        "id": "optimizedCheckout_formField_backgroundColor",
         "options": [
           {
             "value": "white",
