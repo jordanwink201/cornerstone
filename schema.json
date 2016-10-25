@@ -1601,11 +1601,6 @@
         "id": "checkout_headings_font",
         "options": [
           {
-            "group": "Montserrat",
-            "label": "Montserrat",
-            "value": "Google_Montserrat_400"
-          },
-          {
             "group": "Open Sans",
             "label": "Open Sans",
             "value": "Google_Open+Sans_400"
@@ -1614,6 +1609,11 @@
             "group": "Open Sans",
             "label": "Open Sans Bold",
             "value": "Google_Open+Sans_700"
+          },
+          {
+            "group": "Montserrat",
+            "label": "Montserrat",
+            "value": "Google_Montserrat_400"
           },
           {
             "group": "Roboto",
@@ -1641,6 +1641,16 @@
         "label": "Typography",
         "id": "checkout_body_font",
         "options": [
+          {
+            "group": "Open Sans",
+            "label": "Open Sans",
+            "value": "Google_Open+Sans_400"
+          },
+          {
+            "group": "Open Sans",
+            "label": "Open Sans Bold",
+            "value": "Google_Open+Sans_700"
+          },
           {
             "group": "Karla",
             "label": "Karla",
