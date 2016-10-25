@@ -1673,11 +1673,6 @@
         "id": "checkout_color-textLink--hover"
       },
       {
-        "type": "color",
-        "label": "Link Color Active",
-        "id": "checkout_color-textLink--active"
-      },
-      {
         "type": "heading",
         "content": "Buttons"
       },

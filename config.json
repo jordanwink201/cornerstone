@@ -52,7 +52,6 @@
     "checkout_body_font": "Google_Karla_400",
     "checkout_color-textLink": "#4f4f4f",
     "checkout_color-textLink--hover": "#a5a5a5",
-    "checkout_color-textLink--active": "#a5a5a5",
     "checkout_button--primary-color": "#ffffff",
     "checkout_button--primary-colorHover": "#ffffff",
     "checkout_button--primary-colorActive": "#ffffff",
