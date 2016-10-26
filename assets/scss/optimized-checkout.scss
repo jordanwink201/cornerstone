@@ -1,0 +1,53 @@
+// =============================================================================
+// Stencil Checkout - Customize the Optimized Single-Page Checkout experience
+// =============================================================================
+
+// Tools
+// -----------------------------------------------------------------------------
+//
+// 1. Import Citadel's toolkit for use.
+//
+// -----------------------------------------------------------------------------
+
+@import "../../node_modules/@bigcommerce/citadel/dist/tools/toolkit"; // 1
+
+// Settings
+// -----------------------------------------------------------------------------
+//
+// 1. Stencil global settings get imported first.
+// 2. Import all Citadel and Foundation settings.
+// 3. Import Citadel's version of foundation.
+//      - This enables the ability to "null" variables in the Stencil settings.
+// 4. Import Stencil's component settings overrides.
+// 5. Import Optimized Checkout's component settings overrides.
+//
+// -----------------------------------------------------------------------------
+
+@import "settings/global/global"; // 1
+
+@import "../../node_modules/@bigcommerce/citadel/dist/settings/global/global"; // 2
+
+@import "../../node_modules/@bigcommerce/citadel/dist/settings/foundation/global/settings"; // 2
+@import "../../node_modules/@bigcommerce/citadel/dist/settings/foundation/type/settings"; // 2
+@import "../../node_modules/@bigcommerce/citadel/dist/settings/foundation/buttons/settings"; // 2
+
+@import "../../node_modules/@bigcommerce/citadel/dist/vendor/foundation/foundation/functions"; // 3
+@import "../../node_modules/@bigcommerce/citadel/dist/vendor/foundation/foundation/components/global"; // 3
+@import "../../node_modules/@bigcommerce/citadel/dist/vendor/foundation/foundation/components/buttons"; // 3
+
+@import "settings/foundation/global/settings"; // 4
+
+@import "settings/optimizedCheckout/foundation/foundation"; // 5
+
+// Components
+// -----------------------------------------------------------------------------
+//
+// 1. Import Citadel's components.
+// 2. Import Stencil's component additions and custom components.
+// 3. Import Checkout's component additions and custom components.
+//
+// -----------------------------------------------------------------------------
+
+@import "../../node_modules/@bigcommerce/citadel/dist/components/foundation/buttons/component"; // 1
+
+@import "components/stencil/optimizedCheckout/component"; // 3
