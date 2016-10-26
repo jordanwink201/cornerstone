@@ -1462,7 +1462,7 @@
     ]
   },
   {
-    "name": "Checkout",
+    "name": "Optimized Checkout",
     "settings": [
       {
         "type": "heading",
@@ -1471,27 +1471,27 @@
       {
         "type": "color",
         "label": "Background Color",
-        "id": "checkout_header_backgroundColor"
+        "id": "optimizedCheckout_header_backgroundColor"
       },
       {
         "type": "checkbox",
         "label": "Use custom background",
-        "id": "checkout_use_custom_background"
+        "id": "optimizedCheckout_use_custom_background"
       },
       {
         "type": "image",
         "label": "1000 x 400px recommended",
-        "reference": "checkout_use_custom_background",
+        "reference": "optimizedCheckout_use_custom_background",
         "reference_default": false,
-        "id": "checkout_custom_background_image"
+        "id": "optimizedCheckout_custom_background_image"
       },
       {
         "type": "imageDimension",
         "description": "Please specify a maximum image size for desktop display. We'll automatically scale down the image for smaller devices.",
         "label": "",
-        "reference": "checkout_use_custom_background",
+        "reference": "optimizedCheckout_use_custom_background",
         "reference_default": false,
-        "id": "checkout_custom_background_image_size",
+        "id": "optimizedCheckout_custom_background_image_size",
         "options": [
           {
             "value": "1000x400",
@@ -1510,7 +1510,7 @@
       {
         "type": "select",
         "label": "Use Custom Logo",
-        "id": "checkout_use_custom_logo",
+        "id": "optimizedCheckout_use_custom_logo",
         "options": [
           {
             "value": "none",
@@ -1525,18 +1525,18 @@
       {
         "type": "image",
         "label": "250 x 100px recommended",
-        "reference": "checkout_use_custom_logo",
+        "reference": "optimizedCheckout_use_custom_logo",
         "reference_default": "none",
         "force_reload": true,
-        "id": "checkout_custom_logo_image"
+        "id": "optimizedCheckout_custom_logo_image"
       },
       {
         "type": "imageDimension",
         "description": "Please specify a maximum image size for desktop display. We'll automatically scale down the image for smaller devices.",
         "label": "",
-        "reference": "checkout_use_custom_logo",
+        "reference": "optimizedCheckout_use_custom_logo",
         "reference_default": "none",
-        "id": "checkout_custom_logo_image_size",
+        "id": "optimizedCheckout_custom_logo_image_size",
         "force_reload": true,
         "options": [
           {
@@ -1552,7 +1552,7 @@
       {
         "type": "select",
         "label": "Position",
-        "id": "checkout_logo_position",
+        "id": "optimizedCheckout_logo_position",
         "options": [
           {
             "value": "left",
@@ -1575,7 +1575,7 @@
       {
         "type": "color",
         "label": "Background color",
-        "id": "checkout_main_backgroundColor"
+        "id": "optimizedCheckout_main_backgroundColor"
       },
       {
         "type": "heading",
@@ -1584,7 +1584,7 @@
       {
         "type": "color",
         "label": "Background color",
-        "id": "checkout_cart_backgroundColor"
+        "id": "optimizedCheckout_cart_backgroundColor"
       },
       {
         "type": "heading",
@@ -1593,7 +1593,7 @@
       {
         "type": "font",
         "label": "Headings",
-        "id": "checkout_headings_font",
+        "id": "optimizedCheckout_headings_font",
         "options": [
           {
             "group": "Montserrat",
@@ -1625,7 +1625,7 @@
       {
         "type": "font",
         "label": "Body",
-        "id": "checkout_body_font",
+        "id": "optimizedCheckout_body_font",
         "options": [
           {
             "group": "Karla",
@@ -1651,7 +1651,7 @@
       {
         "type": "color",
         "label": "Text Color",
-        "id": "checkout_body_color"
+        "id": "optimizedCheckout_body_color"
       },
       {
         "type": "heading",
@@ -1660,7 +1660,7 @@
       {
         "type": "color",
         "label": "Text Color",
-        "id": "checkout_links_color"
+        "id": "optimizedCheckout_links_color"
       },
       {
         "type": "heading",
@@ -1669,7 +1669,7 @@
       {
         "type": "color",
         "label": "Background Color",
-        "id": "checkout_buttons_backgroundColor"
+        "id": "optimizedCheckout_buttons_backgroundColor"
       },
       {
         "type": "heading",
@@ -1678,7 +1678,7 @@
       {
         "type": "color",
         "label": "Errors",
-        "id": "checkout_errors_color"
+        "id": "optimizedCheckout_errors_color"
       },
       {
         "type": "heading",
@@ -1687,7 +1687,7 @@
       {
         "type": "select",
         "label": "Background Color",
-        "id": "checkout_formField_backgroundColor",
+        "id": "optimizedCheckout_formField_backgroundColor",
         "options": [
           {
             "value": "white",
