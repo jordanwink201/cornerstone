@@ -1637,10 +1637,20 @@
         "id": "optimizedCheckout_color-body"
       },
       {
+        "type": "color",
+        "label": "Background Color",
+        "id": "optimizedCheckout_backgroundColor-body"
+      },
+      {
         "type": "font",
         "label": "Typography",
         "id": "optimizedCheckout_body_font",
         "options": [
+          {
+            "group": "Open Sans",
+            "label": "Open Sans",
+            "value": "Google_Open+Sans_400"
+          },
           {
             "group": "Karla",
             "label": "Karla",

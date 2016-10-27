@@ -36,7 +36,8 @@ h6 {
 
 // Body & Main content area
 body {
-    color: stencilColor("optimizedCheckout_main_backgroundColor");
+    color: stencilColor("optimizedCheckout_color-body");
+    background-color: stencilColor("optimizedCheckout_backgroundColor-body");
     font-family: stencilFontFamily("optimizedCheckout_body_font"), Arial, Helvetica, sans-serif;
     font-weight: stencilFontFamily("optimizedCheckout_body_font");
 }
