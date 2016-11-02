@@ -1471,7 +1471,7 @@
       {
         "type": "color",
         "label": "Background Color",
-        "id": "optimizedCheckout_header_backgroundColor"
+        "id": "optimizedCheckout_header-backgroundColor"
       },
       {
         "type": "checkbox",
@@ -1570,21 +1570,12 @@
       },
       {
         "type": "heading",
-        "content": "Main content area"
-      },
-      {
-        "type": "color",
-        "label": "Background color",
-        "id": "optimizedCheckout_main_backgroundColor"
-      },
-      {
-        "type": "heading",
         "content": "Order Summary"
       },
       {
         "type": "color",
         "label": "Background color",
-        "id": "optimizedCheckout_cart_backgroundColor"
+        "id": "optimizedCheckout_cart-bg"
       },
       {
         "type": "heading",
@@ -1593,12 +1584,12 @@
       {
         "type": "color",
         "label": "Text Color",
-        "id": "optimizedCheckout_color-headings"
+        "id": "optimizedCheckout_color-textHeading"
       },
       {
         "type": "font",
         "label": "Typography",
-        "id": "optimizedCheckout_headings_font",
+        "id": "optimizedCheckout_headings-font",
         "options": [
           {
             "group": "Montserrat",
@@ -1639,12 +1630,12 @@
       {
         "type": "color",
         "label": "Background Color",
-        "id": "optimizedCheckout_backgroundColor-body"
+        "id": "optimizedCheckout_body-bg"
       },
       {
         "type": "font",
         "label": "Typography",
-        "id": "optimizedCheckout_body_font",
+        "id": "optimizedCheckout_body-font",
         "options": [
           {
             "group": "Open Sans",
