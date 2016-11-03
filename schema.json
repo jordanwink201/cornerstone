@@ -1471,7 +1471,7 @@
       {
         "type": "color",
         "label": "Background Color",
-        "id": "optimizedCheckout_header-backgroundColor"
+        "id": "optimizedCheckout_header-bg"
       },
       {
         "type": "checkbox",
@@ -1579,23 +1579,32 @@
       },
       {
         "type": "heading",
-        "content": "Headings"
+        "content": "Checkout Steps"
+      },
+      {
+        "type": "color",
+        "label": "Background color",
+        "id": "optimizedCheckout_step-bg"
+      },
+      {
+        "type": "color",
+        "label": "Text color",
+        "id": "optimizedCheckout_step-text"
+      },
+      {
+        "type": "heading",
+        "content": "Primary Heading"
       },
       {
         "type": "color",
         "label": "Text Color",
-        "id": "optimizedCheckout_color-textHeading"
+        "id": "optimizedCheckout_heading--primary-color"
       },
       {
         "type": "font",
         "label": "Typography",
-        "id": "optimizedCheckout_headings-font",
+        "id": "optimizedCheckout_heading--primary-font",
         "options": [
-          {
-            "group": "Montserrat",
-            "label": "Montserrat",
-            "value": "Google_Montserrat_400"
-          },
           {
             "group": "Open Sans",
             "label": "Open Sans",
@@ -1607,40 +1616,9 @@
             "value": "Google_Open+Sans_700"
           },
           {
-            "group": "Roboto",
-            "label": "Roboto",
-            "value": "Google_Roboto_400"
-          },
-          {
-            "group": "Volkhov",
-            "label": "Volkhov",
-            "value": "Google_Volkhov_400"
-          }
-        ]
-      },
-      {
-        "type": "heading",
-        "content": "Body"
-      },
-      {
-        "type": "color",
-        "label": "Text Color",
-        "id": "optimizedCheckout_color-body"
-      },
-      {
-        "type": "color",
-        "label": "Background Color",
-        "id": "optimizedCheckout_body-bg"
-      },
-      {
-        "type": "font",
-        "label": "Typography",
-        "id": "optimizedCheckout_body-font",
-        "options": [
-          {
-            "group": "Open Sans",
-            "label": "Open Sans",
-            "value": "Google_Open+Sans_400"
+            "group": "Montserrat",
+            "label": "Montserrat",
+            "value": "Google_Montserrat_400"
           },
           {
             "group": "Karla",
@@ -1656,6 +1634,169 @@
             "group": "Source Sans Pro",
             "label": "Source Sans Pro",
             "value": "Google_Source+Sans+Pro_400"
+          },
+          {
+            "group": "Volkhov",
+            "label": "Volkhov",
+            "value": "Google_Volkhov_400"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "content": "Secondary Heading"
+      },
+      {
+        "type": "color",
+        "label": "Text Color",
+        "id": "optimizedCheckout_heading--secondary-color"
+      },
+      {
+        "type": "font",
+        "label": "Typography",
+        "id": "optimizedCheckout_heading--secondary-font",
+        "options": [
+          {
+            "group": "Open Sans",
+            "label": "Open Sans",
+            "value": "Google_Open+Sans_400"
+          },
+          {
+            "group": "Open Sans",
+            "label": "Open Sans Bold",
+            "value": "Google_Open+Sans_700"
+          },
+          {
+            "group": "Montserrat",
+            "label": "Montserrat",
+            "value": "Google_Montserrat_400"
+          },
+          {
+            "group": "Karla",
+            "label": "Karla",
+            "value": "Google_Karla_400"
+          },
+          {
+            "group": "Roboto",
+            "label": "Roboto",
+            "value": "Google_Roboto_400"
+          },
+          {
+            "group": "Source Sans Pro",
+            "label": "Source Sans Pro",
+            "value": "Google_Source+Sans+Pro_400"
+          },
+          {
+            "group": "Volkhov",
+            "label": "Volkhov",
+            "value": "Google_Volkhov_400"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "content": "Primary Body"
+      },
+      {
+        "type": "color",
+        "label": "Background Color",
+        "id": "optimizedCheckout_body-bg"
+      },
+      {
+        "type": "color",
+        "label": "Text Color",
+        "id": "optimizedCheckout_body--primary-color"
+      },
+      {
+        "type": "font",
+        "label": "Typography",
+        "id": "optimizedCheckout_body--primary-font",
+        "options": [
+          {
+            "group": "Open Sans",
+            "label": "Open Sans",
+            "value": "Google_Open+Sans_400"
+          },
+          {
+            "group": "Open Sans",
+            "label": "Open Sans Bold",
+            "value": "Google_Open+Sans_700"
+          },
+          {
+            "group": "Montserrat",
+            "label": "Montserrat",
+            "value": "Google_Montserrat_400"
+          },
+          {
+            "group": "Karla",
+            "label": "Karla",
+            "value": "Google_Karla_400"
+          },
+          {
+            "group": "Roboto",
+            "label": "Roboto",
+            "value": "Google_Roboto_400"
+          },
+          {
+            "group": "Source Sans Pro",
+            "label": "Source Sans Pro",
+            "value": "Google_Source+Sans+Pro_400"
+          },
+          {
+            "group": "Volkhov",
+            "label": "Volkhov",
+            "value": "Google_Volkhov_400"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "content": "Secondary Body"
+      },
+      {
+        "type": "color",
+        "label": "Text Color",
+        "id": "optimizedCheckout_body--secondary-color"
+      },
+      {
+        "type": "font",
+        "label": "Typography",
+        "id": "optimizedCheckout_body--secondary-font",
+        "options": [
+          {
+            "group": "Open Sans",
+            "label": "Open Sans",
+            "value": "Google_Open+Sans_400"
+          },
+          {
+            "group": "Open Sans",
+            "label": "Open Sans Bold",
+            "value": "Google_Open+Sans_700"
+          },
+          {
+            "group": "Montserrat",
+            "label": "Montserrat",
+            "value": "Google_Montserrat_400"
+          },
+          {
+            "group": "Karla",
+            "label": "Karla",
+            "value": "Google_Karla_400"
+          },
+          {
+            "group": "Roboto",
+            "label": "Roboto",
+            "value": "Google_Roboto_400"
+          },
+          {
+            "group": "Source Sans Pro",
+            "label": "Source Sans Pro",
+            "value": "Google_Source+Sans+Pro_400"
+          },
+          {
+            "group": "Volkhov",
+            "label": "Volkhov",
+            "value": "Google_Volkhov_400"
           }
         ]
       },
@@ -1665,21 +1806,96 @@
       },
       {
         "type": "color",
-        "label": "Link Color",
-        "id": "optimizedCheckout_color-textLink"
+        "label": "Text Color",
+        "id": "optimizedCheckout_link-color"
       },
       {
-        "type": "color",
-        "label": "Link Color Hover",
-        "id": "optimizedCheckout_color-textLink--hover"
-      },
-      {
-        "type": "heading",
-        "content": "Buttons"
+        "type": "font",
+        "label": "Typography",
+        "id": "optimizedCheckout_link-font",
+        "options": [
+          {
+            "group": "Open Sans",
+            "label": "Open Sans",
+            "value": "Google_Open+Sans_400"
+          },
+          {
+            "group": "Open Sans",
+            "label": "Open Sans Bold",
+            "value": "Google_Open+Sans_700"
+          },
+          {
+            "group": "Montserrat",
+            "label": "Montserrat",
+            "value": "Google_Montserrat_400"
+          },
+          {
+            "group": "Karla",
+            "label": "Karla",
+            "value": "Google_Karla_400"
+          },
+          {
+            "group": "Roboto",
+            "label": "Roboto",
+            "value": "Google_Roboto_400"
+          },
+          {
+            "group": "Source Sans Pro",
+            "label": "Source Sans Pro",
+            "value": "Google_Source+Sans+Pro_400"
+          },
+          {
+            "group": "Volkhov",
+            "label": "Volkhov",
+            "value": "Google_Volkhov_400"
+          }
+        ]
       },
       {
         "type": "heading",
         "content": "Primary button"
+      },
+      {
+        "type": "font",
+        "label": "Typography",
+        "id": "optimizedCheckout_button--primary-font",
+        "options": [
+          {
+            "group": "Open Sans",
+            "label": "Open Sans",
+            "value": "Google_Open+Sans_400"
+          },
+          {
+            "group": "Open Sans",
+            "label": "Open Sans Bold",
+            "value": "Google_Open+Sans_700"
+          },
+          {
+            "group": "Montserrat",
+            "label": "Montserrat",
+            "value": "Google_Montserrat_400"
+          },
+          {
+            "group": "Karla",
+            "label": "Karla",
+            "value": "Google_Karla_400"
+          },
+          {
+            "group": "Roboto",
+            "label": "Roboto",
+            "value": "Google_Roboto_400"
+          },
+          {
+            "group": "Source Sans Pro",
+            "label": "Source Sans Pro",
+            "value": "Google_Source+Sans+Pro_400"
+          },
+          {
+            "group": "Volkhov",
+            "label": "Volkhov",
+            "value": "Google_Volkhov_400"
+          }
+        ]
       },
       {
         "type": "color",
@@ -1699,17 +1915,17 @@
       {
         "type": "color",
         "label": "Background color",
-        "id": "optimizedCheckout_button--primary-backgroundColor"
+        "id": "optimizedCheckout_button--primary-bg"
       },
       {
         "type": "color",
         "label": "Background hover color",
-        "id": "optimizedCheckout_button--primary-backgroundColorHover"
+        "id": "optimizedCheckout_button--primary-bgHover"
       },
       {
         "type": "color",
         "label": "Background active color",
-        "id": "optimizedCheckout_button--primary-backgroundColorActive"
+        "id": "optimizedCheckout_button--primary-bgActive"
       },
       {
         "type": "color",
@@ -1728,101 +1944,64 @@
       },
       {
         "type": "heading",
-        "content": "Tertiary button"
+        "content": "Secondary button"
+      },
+      {
+        "type": "font",
+        "label": "Typography",
+        "id": "optimizedCheckout_button--secondary-font",
+        "options": [
+          {
+            "group": "Open Sans",
+            "label": "Open Sans",
+            "value": "Google_Open+Sans_400"
+          },
+          {
+            "group": "Open Sans",
+            "label": "Open Sans Bold",
+            "value": "Google_Open+Sans_700"
+          },
+          {
+            "group": "Montserrat",
+            "label": "Montserrat",
+            "value": "Google_Montserrat_400"
+          },
+          {
+            "group": "Karla",
+            "label": "Karla",
+            "value": "Google_Karla_400"
+          },
+          {
+            "group": "Roboto",
+            "label": "Roboto",
+            "value": "Google_Roboto_400"
+          },
+          {
+            "group": "Source Sans Pro",
+            "label": "Source Sans Pro",
+            "value": "Google_Source+Sans+Pro_400"
+          },
+          {
+            "group": "Volkhov",
+            "label": "Volkhov",
+            "value": "Google_Volkhov_400"
+          }
+        ]
       },
       {
         "type": "color",
         "label": "Text color",
-        "id": "optimizedCheckout_button--tertiary-color"
-      },
-      {
-        "type": "color",
-        "label": "Text hover color",
-        "id": "optimizedCheckout_button--tertiary-colorHover"
-      },
-      {
-        "type": "color",
-        "label": "Text active color",
-        "id": "optimizedCheckout_button--tertiary-colorActive"
+        "id": "optimizedCheckout_button--secondary-color"
       },
       {
         "type": "color",
         "label": "Background color",
-        "id": "optimizedCheckout_button--tertiary-backgroundColor"
-      },
-      {
-        "type": "color",
-        "label": "Background hover color",
-        "id": "optimizedCheckout_button--tertiary-backgroundColorHover"
-      },
-      {
-        "type": "color",
-        "label": "Background active color",
-        "id": "optimizedCheckout_button--tertiary-backgroundColorActive"
+        "id": "optimizedCheckout_button--secondary-bg"
       },
       {
         "type": "color",
         "label": "Border color",
-        "id": "optimizedCheckout_button--tertiary-borderColor"
-      },
-      {
-        "type": "color",
-        "label": "Border hover color",
-        "id": "optimizedCheckout_button--tertiary-borderColorHover"
-      },
-      {
-        "type": "color",
-        "label": "Border active color",
-        "id": "optimizedCheckout_button--tertiary-borderColorActive"
-      },
-      {
-        "type": "heading",
-        "content": "Action button"
-      },
-      {
-        "type": "color",
-        "label": "Text color",
-        "id": "optimizedCheckout_button--action-color"
-      },
-      {
-        "type": "color",
-        "label": "Text hover color",
-        "id": "optimizedCheckout_button--action-colorHover"
-      },
-      {
-        "type": "color",
-        "label": "Text active color",
-        "id": "optimizedCheckout_button--action-colorActive"
-      },
-      {
-        "type": "color",
-        "label": "Background color",
-        "id": "optimizedCheckout_button--action-backgroundColor"
-      },
-      {
-        "type": "color",
-        "label": "Background hover color",
-        "id": "optimizedCheckout_button--action-backgroundColorHover"
-      },
-      {
-        "type": "color",
-        "label": "Background active color",
-        "id": "optimizedCheckout_button--action-backgroundColorActive"
-      },
-      {
-        "type": "color",
-        "label": "Border color",
-        "id": "optimizedCheckout_button--action-borderColor"
-      },
-      {
-        "type": "color",
-        "label": "Border hover color",
-        "id": "optimizedCheckout_button--action-borderColorHover"
-      },
-      {
-        "type": "color",
-        "label": "Border active color",
-        "id": "optimizedCheckout_button--action-borderColorActive"
+        "id": "optimizedCheckout_button--secondary-borderColor"
       },
       {
         "type": "heading",
@@ -1831,16 +2010,30 @@
       {
         "type": "color",
         "label": "Text Color",
-        "id": "optimizedCheckout_color-error"
+        "id": "optimizedCheckout_error-color"
       },
       {
         "type": "heading",
-        "content": "Form Fields"
+        "content": "Form Label"
+      },
+      {
+        "type": "color",
+        "label": "Text Color",
+        "id": "optimizedCheckout_form-text"
+      },
+      {
+        "type": "heading",
+        "content": "Form Input"
+      },
+      {
+        "type": "color",
+        "label": "Border Color",
+        "id": "optimizedCheckout_formField-borderColor"
       },
       {
         "type": "select",
         "label": "Background Color",
-        "id": "optimizedCheckout_formField_backgroundColor",
+        "id": "optimizedCheckout_formField-bg",
         "options": [
           {
             "value": "white",
