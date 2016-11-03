@@ -2,12 +2,8 @@
 // Stencil Checkout - Customize the Optimized Single-Page Checkout experience
 // =============================================================================
 
-// =============================================================================
-// Stencil Checkout  - Customize the Optimized Single-Page Checkout experience
-// =============================================================================
-
-// Header
-.checkoutHeader {
+// HEADER
+.optimizedCheckout_header {
     background-image: url(stencilImage('optimizedCheckout_custom_background_image', 'optimizedCheckout_custom_background_image_size'));
     background-size: cover;
     background-color: stencilColor("optimizedCheckout_header-backgroundColor");
@@ -18,114 +14,103 @@
     }
 }
 
-// Order Summary, Mobile Order Summary, Modal Order Summary
-.cart,
-.cartDrawer,
-.cart-modal-body,
-.cart-modal-header {
-    background-color: stencilColor("optimizedCheckout_cart-bg");
-}
-
 // H1 HEADINGS
-.textHeading {
+.optimizedCheckout-textHeading {
     color: stencilColor("optimizedCheckout_color-textHeading");
 }
 
 // H2 HEADINGS
-.subTextHeading {
+.optimizedCheckout_subTextHeading {
     color: stencilColor("optimizedCheckout_color-subTextHeading");
 }
 
-// Headings
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    color: stencilColor("optimizedCheckout_color-textHeading");
-    font-family: stencilFontFamily("optimizedCheckout_headings-font"), Arial, Helvetica, sans-serif;
-    font-weight: stencilFontWeight("optimizedCheckout_headings-font");
-}
-
-// Body & Main content area
+// BODY
 body {
-    color: stencilColor("optimizedCheckout_color-body");
     background-color: stencilColor("optimizedCheckout_body-bg");
-    font-family: stencilFontFamily("optimizedCheckout_body-font"), Arial, Helvetica, sans-serif;
-    font-weight: stencilFontFamily("optimizedCheckout_body-font");
 }
 
-// Links
-$anchor-font-color:                    stencilColor("optimizedCheckout_color-textLink");
-$anchor-font-color-hover:              stencilColor("optimizedCheckout_color-textLink--hover");
+// Shipping Method Overlay
+.optimizedCheckout_overlay {
+    background-color: stencilColor("optimizedCheckout_body-bg");
+}
 
+// BODY PRIMARY
+.optimizedCheckout_color-body {
+    color: stencilColor("optimizedCheckout_color-bodyPrimary");
+}
+
+// BODY SECONDARY
+.optimizedCheckout_color-bodySecondary {
+    color: stencilColor("optimizedCheckout_color-bodySecondary");
+}
+
+// PRIMARY BUTTON
+.optimizedCheckout_button--primary {
+    color: stencilColor("optimizedCheckout_button--primary-color");
+    background-color: stencilColor("optimizedCheckout_button--primary-backgroundColor");
+    border-color: stencilColor("optimizedCheckout_button--primary-borderColor");
+
+    &:hover {
+        color: stencilColor("optimizedCheckout_button--primary-colorHover");
+        background-color: stencilColor("optimizedCheckout_button--primary-backgroundColorHover");
+        border-color: stencilColor("optimizedCheckout_button--primary-borderColorHover");
+    }
+    &:active {
+        color: stencilColor("optimizedCheckout_button--primary-colorActive");
+        background-color: stencilColor("optimizedCheckout_button--primary-backgroundColorActive");
+        border-color: stencilColor("optimizedCheckout_button--primary-borderColorActive");
+    }
+}
+
+// SECONDARY BUTTON
+.optimizedCheckout_secondary--button {
+    color: stencilColor("optimizedCheckout_button--secondary-color");
+    background-color: stencilColor("optimizedCheckout_button--secondary-backgroundColor");
+    border-color: stencilColor("optimizedCheckout_button--secondary-borderColor");
+
+    &:hover {
+        color: stencilColor("optimizedCheckout_button--secondary-colorHover");
+        background-color: stencilColor("optimizedCheckout_button--secondary-backgroundColorHover");
+        border-color: stencilColor("optimizedCheckout_button--secondary-borderColorHover");
+    }
+    &:active {
+        color: stencilColor("optimizedCheckout_button--secondary-colorActive");
+        background-color: stencilColor("optimizedCheckout_button--secondary-backgroundColorActive");
+        border-color: stencilColor("optimizedCheckout_button--secondary-borderColorActive");
+    }
+}
+
+// LINKS
 a {
-    color: $anchor-font-color;
+    color: stencilColor("optimizedCheckout_color-textLink");
 
     &:hover,
-    &:focus {
-        color: $anchor-font-color-hover;
+    &:active {
+        //color: stencilColor("optimizedCheckout_color-textLink--hover");
     }
 }
 
-// Buttons
-.button {
-    font-family: stencilFontFamily("optimizedCheckout_body-font"), Arial, Helvetica, sans-serif;
+// ORDER SUMMARY
+.stencil-orderSummary {
+    background-color: stencilColor("optimizedCheckout_cart-bg");
 }
 
-.primary--button {
-    color: stencilColor("");
-    &:hover {
-        color: stencilColor("");
-    }
-    &:hover {
-        color: stencilColor("");
-    }
-}
-
-// Steps
-.stepHeader-counter {
+// CIRCLES
+.optimizedCheckout_step {
     background-color: stencilColor("optimizedCheckout_step-bg");
 
     &::before {
-        color: stencilColor("optimizedCheckout_color-stepText");
+        color: stencilColor("optimizedCheckout_step-text");
     }
 }
 
-
-// Errors
-.form-field--error {
-
-    .form-input,
-    .form-select,
-    .form-checkbox + .form-label::before,
-    .form-radio + .form-label::before,
-    .form-prefixPostfix-label {
-        border-color: stencilColor("optimizedCheckout_errors_color");
-    }
-
-    .form-field-error,
-    .form-inlineMessage {
-        color: stencilColor("optimizedCheckout_errors_color");
-    }
-
-    // Depth need to style svg with validation state
-    // scss-lint:disable SelectorDepth
-    .form-input-indicator > svg {
-        fill: stencilColor("optimizedCheckout_errors_color");
-    }
-    // scss-lint:enable SelectorDepth
+// FORM LABELS
+.optimizedCheckout_form-label {
+    color: stencilColor("optimizedCheckout_form-text");
 }
 
-// Form Fields
-.form-input,
-.form-select {
-    background-color: stencilString("optimizedCheckout_formField_backgroundColor");
-}
-
-.form-select {
-    &:hover {
-        background-color: stencilString("optimizedCheckout_formField_backgroundColor");
-    }
+// FORM INPUT
+.optimizedCheckout_form-input {
+    background-color: stencilColor("optimizedCheckout_formField_backgroundColor");
+    border-color: stencilColor("optimizedCheckout_formField_borderColor");
 }

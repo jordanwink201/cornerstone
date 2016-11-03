@@ -1579,12 +1579,31 @@
       },
       {
         "type": "heading",
+        "content": "Checkout Steps"
+      },
+      {
+        "type": "color",
+        "label": "Background color",
+        "id": "optimizedCheckout_step-bg"
+      },
+      {
+        "type": "color",
+        "label": "Text color",
+        "id": "optimizedCheckout_step-text"
+      },
+      {
+        "type": "heading",
         "content": "Headings"
       },
       {
         "type": "color",
-        "label": "Text Color",
+        "label": "Primary Text Color",
         "id": "optimizedCheckout_color-textHeading"
+      },
+      {
+        "type": "color",
+        "label": "Secondary Text Color",
+        "id": "optimizedCheckout_color-subTextHeading"
       },
       {
         "type": "font",
@@ -1624,13 +1643,18 @@
       },
       {
         "type": "color",
-        "label": "Text Color",
-        "id": "optimizedCheckout_color-body"
+        "label": "Background Color",
+        "id": "optimizedCheckout_body-bg"
       },
       {
         "type": "color",
-        "label": "Background Color",
-        "id": "optimizedCheckout_body-bg"
+        "label": "Primary Color",
+        "id": "optimizedCheckout_color-bodyPrimary"
+      },
+      {
+        "type": "color",
+        "label": "Secondary Color",
+        "id": "optimizedCheckout_color-bodySecondary"
       },
       {
         "type": "font",
@@ -1777,55 +1801,6 @@
       },
       {
         "type": "heading",
-        "content": "Action button"
-      },
-      {
-        "type": "color",
-        "label": "Text color",
-        "id": "optimizedCheckout_button--action-color"
-      },
-      {
-        "type": "color",
-        "label": "Text hover color",
-        "id": "optimizedCheckout_button--action-colorHover"
-      },
-      {
-        "type": "color",
-        "label": "Text active color",
-        "id": "optimizedCheckout_button--action-colorActive"
-      },
-      {
-        "type": "color",
-        "label": "Background color",
-        "id": "optimizedCheckout_button--action-backgroundColor"
-      },
-      {
-        "type": "color",
-        "label": "Background hover color",
-        "id": "optimizedCheckout_button--action-backgroundColorHover"
-      },
-      {
-        "type": "color",
-        "label": "Background active color",
-        "id": "optimizedCheckout_button--action-backgroundColorActive"
-      },
-      {
-        "type": "color",
-        "label": "Border color",
-        "id": "optimizedCheckout_button--action-borderColor"
-      },
-      {
-        "type": "color",
-        "label": "Border hover color",
-        "id": "optimizedCheckout_button--action-borderColorHover"
-      },
-      {
-        "type": "color",
-        "label": "Border active color",
-        "id": "optimizedCheckout_button--action-borderColorActive"
-      },
-      {
-        "type": "heading",
         "content": "Errors"
       },
       {
@@ -1835,7 +1810,21 @@
       },
       {
         "type": "heading",
-        "content": "Form Fields"
+        "content": "Form Label"
+      },
+      {
+        "type": "color",
+        "label": "Text Color",
+        "id": "optimizedCheckout_form-text"
+      },
+      {
+        "type": "heading",
+        "content": "Form Input"
+      },
+      {
+        "type": "color",
+        "label": "Border Color",
+        "id": "optimizedCheckout_formField_borderColor"
       },
       {
         "type": "select",
