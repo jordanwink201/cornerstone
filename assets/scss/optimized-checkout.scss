@@ -11,61 +11,75 @@
 // =============================================================================
 
 //
+// Import Mixins/Tools
+// breakpoint
+// -----------------------------------------------------------------------------
+
+@import "../../node_modules/@bigcommerce/citadel/dist/tools/toolkit"; // 1
+@import "settings/global/global"; // 1
+@import "../../node_modules/@bigcommerce/citadel/dist/settings/global/global"; // 2
+
+//
 // Header Section
 // Background, Logo Position
 // -----------------------------------------------------------------------------
 
-.optimizedCheckout_header {
-    background-image: url(stencilImage('optimizedCheckout_custom_background_image', 'optimizedCheckout_custom_background_image_size'));
+.optimizedCheckout-header {
+    background-color: stencilColor("optimizedCheckout-header-backgroundColor");
+    background-image: url(stencilImage('optimizedCheckout-backgroundImage', 'optimizedCheckout-backgroundImage-size'));
     background-size: cover;
-    background-color: stencilColor("optimizedCheckout_header-bg");
 
     // Desktop Only
     @include breakpoint("medium") {
-        text-align: stencilString("optimizedCheckout_logo_position");
+        text-align: stencilString("optimizedCheckout-logo-position");
     }
 }
 
 //
-// Headings
+// Primary and Secondary Headings
 // Text Color & Typography
 // -----------------------------------------------------------------------------
 
-.optimizedCheckout-heading--primary {
-    color: stencilColor("optimizedCheckout_heading--primary-color");
-    font-family: stencilFontFamily("optimizedCheckout_heading--primary-font"), Arial, Helvetica, sans-serif;
-    font-weight: stencilFontWeight("optimizedCheckout_heading--primary-font");
+.optimizedCheckout-headingPrimary {
+    color: stencilColor("optimizedCheckout-headingPrimary-color");
+    font-family: stencilFontFamily("optimizedCheckout-headingPrimary-font"), Arial, Helvetica, sans-serif;
+    font-weight: stencilFontWeight("optimizedCheckout-headingPrimary-font");
 }
 
-.optimizedCheckout_heading--secondary {
-    color: stencilColor("optimizedCheckout_heading--secondary-color");
-    font-family: stencilFontFamily("optimizedCheckout_heading--secondary-font"), Arial, Helvetica, sans-serif;
-    font-weight: stencilFontWeight("optimizedCheckout_heading--secondary-font");
+.optimizedCheckout-headingSecondary {
+    color: stencilColor("optimizedCheckout-headingSecondary-color");
+    font-family: stencilFontFamily("optimizedCheckout-headingSecondary-font"), Arial, Helvetica, sans-serif;
+    font-weight: stencilFontWeight("optimizedCheckout-headingSecondary-font");
 }
 
 //
 // Body
-// Background & Shipping Method Overlay & Text Color & Typography
+// Background & Shipping Method Overlay
 // -----------------------------------------------------------------------------
 
 body {
-    background-color: stencilColor("optimizedCheckout_body-bg");
+    background-color: stencilColor("optimizedCheckout-body-backgroundColor");
 }
 
-.optimizedCheckout_overlay {
-    background-color: stencilColor("optimizedCheckout_body-bg");
+.optimizedCheckout-overlay {
+    background-color: stencilColor("optimizedCheckout-body-backgroundColor");
 }
 
-.optimizedCheckout_body--primary {
-    color: stencilColor("optimizedCheckout_body--primary-color");
-    font-family: stencilFontFamily("optimizedCheckout_body--primary-font"), Arial, Helvetica, sans-serif;
-    font-weight: stencilFontWeight("optimizedCheckout_body--primary-font");
+//
+// Primary & Secondary Content
+// Text Color & Typography
+// -----------------------------------------------------------------------------
+
+.optimizedCheckout-contentPrimary {
+    color: stencilColor("optimizedCheckout-contentPrimary-color");
+    font-family: stencilFontFamily("optimizedCheckout-contentPrimary-font"), Arial, Helvetica, sans-serif;
+    font-weight: stencilFontWeight("optimizedCheckout-contentPrimary-font");
 }
 
-.optimizedCheckout_body--secondary {
-    color: stencilColor("optimizedCheckout_body--secondary-color");
-    font-family: stencilFontFamily("optimizedCheckout_body--secondary-font"), Arial, Helvetica, sans-serif;
-    font-weight: stencilFontWeight("optimizedCheckout_body--secondary-font");
+.optimizedCheckout-contentSecondary {
+    color: stencilColor("optimizedCheckout-contentSecondary-color");
+    font-family: stencilFontFamily("optimizedCheckout-contentSecondary-font"), Arial, Helvetica, sans-serif;
+    font-weight: stencilFontWeight("optimizedCheckout-contentSecondary-font");
 }
 
 //
@@ -73,22 +87,23 @@ body {
 // Background & Border & Text Color & Typography
 // -----------------------------------------------------------------------------
 
-.optimizedCheckout_button--primary {
-    color: stencilColor("optimizedCheckout_button--primary-color");
-    background-color: stencilColor("optimizedCheckout_button--primary-bg");
-    border-color: stencilColor("optimizedCheckout_button--primary-borderColor");
-    font-family: stencilFontFamily("optimizedCheckout_button--primary-font"), Arial, Helvetica, sans-serif;
-    font-weight: stencilFontWeight("optimizedCheckout_button--primary-font");
+.optimizedCheckout-button--primary {
+    background-color: stencilColor("optimizedCheckout-button-primary-backgroundColor");
+    border-color: stencilColor("optimizedCheckout-button-primary-borderColor");
+    color: stencilColor("optimizedCheckout-button-primary-color");
+    font-family: stencilFontFamily("optimizedCheckout-button-primary-font"), Arial, Helvetica, sans-serif;
+    font-weight: stencilFontWeight("optimizedCheckout-button-primary-font");
 
+    &:focus,
     &:hover {
-        color: stencilColor("optimizedCheckout_button--primary-colorHover");
-        background-color: stencilColor("optimizedCheckout_button--primary-bgHover");
-        border-color: stencilColor("optimizedCheckout_button--primary-borderColorHover");
+        background-color: stencilColor("optimizedCheckout-button-primary-backgroundColorHover");
+        border-color: stencilColor("optimizedCheckout-button-primary-borderColorHover");
+        color: stencilColor("optimizedCheckout-button-primary-colorHover");
     }
     &:active {
-        color: stencilColor("optimizedCheckout_button--primary-colorActive");
-        background-color: stencilColor("optimizedCheckout_button--primary-bgActive");
-        border-color: stencilColor("optimizedCheckout_button--primary-borderColorActive");
+        background-color: stencilColor("optimizedCheckout-button-primary-backgroundColorActive");
+        border-color: stencilColor("optimizedCheckout-button-primary-borderColorActive");
+        color: stencilColor("optimizedCheckout-button-primary-colorActive");
     }
 }
 
@@ -97,12 +112,12 @@ body {
 // Background & Border & Text Color & Typography
 // -----------------------------------------------------------------------------
 
-.optimizedCheckout_secondary--button {
-    color: stencilColor("optimizedCheckout_button--secondary-color");
-    background-color: stencilColor("optimizedCheckout_button--secondary-bg");
-    border-color: stencilColor("optimizedCheckout_button--secondary-borderColor");
-    font-family: stencilFontFamily("optimizedCheckout_button--secondary-font"), Arial, Helvetica, sans-serif;
-    font-weight: stencilFontWeight("optimizedCheckout_button--secondary-font");
+.optimizedCheckout-button--secondary {
+    background-color: stencilColor("optimizedCheckout-button-secondary-backgroundColor");
+    border-color: stencilColor("optimizedCheckout-button-secondary-borderColor");
+    color: stencilColor("optimizedCheckout-button-secondary-color");
+    font-family: stencilFontFamily("optimizedCheckout-button-secondary-font"), Arial, Helvetica, sans-serif;
+    font-weight: stencilFontWeight("optimizedCheckout-button-secondary-font");
 }
 
 //
@@ -111,9 +126,9 @@ body {
 // -----------------------------------------------------------------------------
 
 a {
-    color: stencilColor("optimizedCheckout_link-color");
-    font-family: stencilFontFamily("optimizedCheckout_link-font"), Arial, Helvetica, sans-serif;
-    font-weight: stencilFontWeight("optimizedCheckout_link-font");
+    color: stencilColor("optimizedCheckout-link-color");
+    font-family: stencilFontFamily("optimizedCheckout-link-font"), Arial, Helvetica, sans-serif;
+    font-weight: stencilFontWeight("optimizedCheckout-link-font");
 }
 
 //
@@ -121,31 +136,25 @@ a {
 // Background
 // -----------------------------------------------------------------------------
 
-.optimizedCheckout_orderSummary {
-    background-color: stencilColor("optimizedCheckout_cart-bg");
+.optimizedCheckout-orderSummary {
+    background-color: stencilColor("optimizedCheckout-orderSummary-backgroundColor");
 }
 
 //
-// Order Steps
+// Checkout Steps
 // Background & Text Color
 // -----------------------------------------------------------------------------
 
-.optimizedCheckout_step {
-    background-color: stencilColor("optimizedCheckout_step-bg");
+.optimizedCheckout-step {
+    background-color: stencilColor("optimizedCheckout-step-backgroundColor");
 
     &::before {
-        color: stencilColor("optimizedCheckout_step-text");
+        color: stencilColor("optimizedCheckout-step-text");
     }
-}
 
-//
-// Form Errors
-// Border & Text Color
-// -----------------------------------------------------------------------------
-
-.optimizedCheckout_form-error {
-    border-color: stencilColor("optimizedCheckout_error-color");
-    color: stencilColor("optimizedCheckout_error-color");
+    svg {
+        fill: stencilColor("optimizedCheckout-step-text");
+    }
 }
 
 //
@@ -153,8 +162,8 @@ a {
 // Text Color
 // -----------------------------------------------------------------------------
 
-.optimizedCheckout_form-label {
-    color: stencilColor("optimizedCheckout_form-text");
+.optimizedCheckout-form-label {
+    color: stencilColor("optimizedCheckout-form-text");
 }
 
 //
@@ -162,7 +171,7 @@ a {
 // Background & Border Color
 // -----------------------------------------------------------------------------
 
-.optimizedCheckout_form-input {
-    background-color: stencilColor("optimizedCheckout_formField-bg");
-    border-color: stencilColor("optimizedCheckout_formField-borderColor");
+.optimizedCheckout-form-input {
+    background-color: stencilString("optimizedCheckout-formField-backgroundColor");
+    border-color: stencilColor("optimizedCheckout-formField-borderColor");
 }
