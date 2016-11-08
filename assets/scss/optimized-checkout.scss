@@ -1,103 +1,178 @@
 // =============================================================================
-// Stencil Checkout  - Customize the Optimized Single-Page Checkout experience
+// Stencil Checkout - Customize the Optimized Single-Page Checkout experience
 // =============================================================================
+
+// =============================================================================
+//
+// IMPORTANT DISCLAIMER
+// Please refrain from nesting or using other class selectors than the ones given below.
+// Future support is only guaranteed if class selectors are left unchanged.
+//
+// =============================================================================
+
+//
+// Import Mixins/Tools
+// breakpoint
+// -----------------------------------------------------------------------------
 
 @import "../../node_modules/@bigcommerce/citadel/dist/tools/toolkit"; // 1
 @import "settings/global/global"; // 1
-
 @import "../../node_modules/@bigcommerce/citadel/dist/settings/global/global"; // 2
 
-.checkoutHeader {
-    background-image: url(stencilImage('optimizedCheckout_custom_background_image', 'optimizedCheckout_custom_background_image_size'));
+//
+// Header Section
+// Background, Logo Position
+// -----------------------------------------------------------------------------
+
+.optimizedCheckout-header {
+    background-color: stencilColor("optimizedCheckout-header-backgroundColor");
+    background-image: url(stencilImage("'optimizedCheckout-backgroundImage'", "'optimizedCheckout-backgroundImage-size'"));
     background-size: cover;
-    background-color: stencilColor("optimizedCheckout_header_backgroundColor");
 
     // Desktop Only
     @include breakpoint("medium") {
-        text-align: stencilString("optimizedCheckout_logo_position");
+        text-align: stencilString("optimizedCheckout-logo-position");
     }
 }
 
-// Main content
-.ng-checkout-container {
-    background-color: stencilColor("optimizedCheckout_main_backgroundColor");
+//
+// Primary and Secondary Headings
+// Text Color & Typography
+// -----------------------------------------------------------------------------
+
+.optimizedCheckout-headingPrimary {
+    color: stencilColor("optimizedCheckout-headingPrimary-color");
+    font-family: stencilFontFamily("optimizedCheckout-headingPrimary-font"), Arial, Helvetica, sans-serif;
+    font-weight: stencilFontWeight("optimizedCheckout-headingPrimary-font");
 }
 
-// Order Summary, Mobile Order Summary, Modal Order Summary
-.cart,
-.cartDrawer,
-.cart-modal-body,
-.cart-modal-header {
-    background-color: stencilColor("optimizedCheckout_cart_backgroundColor");
+.optimizedCheckout-headingSecondary {
+    color: stencilColor("optimizedCheckout-headingSecondary-color");
+    font-family: stencilFontFamily("optimizedCheckout-headingSecondary-font"), Arial, Helvetica, sans-serif;
+    font-weight: stencilFontWeight("optimizedCheckout-headingSecondary-font");
 }
 
-// Typography
-$headings-font-family:           stencilFontFamily("optimizedCheckout_headings_font"), Arial, Helvetica, sans-serif;
-$headings-font-weight:           stencilFontWeight("optimizedCheckout_headings_font");
-
-$body-font-family:               stencilFontFamily("optimizedCheckout_body_font"), Arial, Helvetica, sans-serif;
-$body-font-weight:               stencilFontFamily("optimizedCheckout_body_font");
-
-// Headings
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: $headings-font-family;
-    font-weight: $headings-font-weight;
-}
-
+//
 // Body
+// Background & Shipping Method Overlay
+// -----------------------------------------------------------------------------
+
 body {
-    font-family: $body-font-family;
-    font-weight: $body-font-weight;
-    color: stencilColor("optimizedCheckout_body_color");
+    background-color: stencilColor("optimizedCheckout-body-backgroundColor");
 }
 
-// Links
-a {
-    color: stencilColor("optimizedCheckout_links_color");
+.optimizedCheckout-overlay {
+    background-color: stencilColor("optimizedCheckout-body-backgroundColor");
 }
 
-// Buttons
-.button {
-    background-color: stencilColor("optimizedCheckout_buttons_backgroundColor");
+//
+// Primary & Secondary Content
+// Text Color & Typography
+// -----------------------------------------------------------------------------
+
+.optimizedCheckout-contentPrimary {
+    color: stencilColor("optimizedCheckout-contentPrimary-color");
+    font-family: stencilFontFamily("optimizedCheckout-contentPrimary-font"), Arial, Helvetica, sans-serif;
+    font-weight: stencilFontWeight("optimizedCheckout-contentPrimary-font");
 }
 
-// Errors
-.form-field--error {
-
-    .form-input,
-    .form-select,
-    .form-checkbox + .form-label::before,
-    .form-radio + .form-label::before,
-    .form-prefixPostfix-label {
-        border-color: stencilColor("optimizedCheckout_errors_color");
-    }
-
-    .form-field-error,
-    .form-inlineMessage {
-        color: stencilColor("optimizedCheckout_errors_color");
-    }
-
-    // Depth need to style svg with validation state
-    // scss-lint:disable SelectorDepth
-    .form-input-indicator > svg {
-        fill: stencilColor("optimizedCheckout_errors_color");
-    }
-    // scss-lint:enable SelectorDepth
+.optimizedCheckout-contentSecondary {
+    color: stencilColor("optimizedCheckout-contentSecondary-color");
+    font-family: stencilFontFamily("optimizedCheckout-contentSecondary-font"), Arial, Helvetica, sans-serif;
+    font-weight: stencilFontWeight("optimizedCheckout-contentSecondary-font");
 }
 
-// Form Fields
-.form-input,
-.form-select {
-    background-color: stencilString("optimizedCheckout_formField_backgroundColor");
-}
+//
+// Primary Button
+// Background & Border & Text Color & Typography
+// -----------------------------------------------------------------------------
 
-.form-select {
+.optimizedCheckout-button--primary {
+    background-color: stencilColor("optimizedCheckout-button-primary-backgroundColor");
+    border-color: stencilColor("optimizedCheckout-button-primary-borderColor");
+    color: stencilColor("optimizedCheckout-button-primary-color");
+    font-family: stencilFontFamily("optimizedCheckout-button-primary-font"), Arial, Helvetica, sans-serif;
+    font-weight: stencilFontWeight("optimizedCheckout-button-primary-font");
+
+    &:focus,
     &:hover {
-        background-color: stencilString("optimizedCheckout_formField_backgroundColor");
+        background-color: stencilColor("optimizedCheckout-button-primary-backgroundColorHover");
+        border-color: stencilColor("optimizedCheckout-button-primary-borderColorHover");
+        color: stencilColor("optimizedCheckout-button-primary-colorHover");
     }
+
+    &:active {
+        background-color: stencilColor("optimizedCheckout-button-primary-backgroundColorActive");
+        border-color: stencilColor("optimizedCheckout-button-primary-borderColorActive");
+        color: stencilColor("optimizedCheckout-button-primary-colorActive");
+    }
+}
+
+//
+// Secondary Button
+// Background & Border & Text Color & Typography
+// -----------------------------------------------------------------------------
+
+.optimizedCheckout-button--secondary {
+    background-color: stencilColor("optimizedCheckout-button-secondary-backgroundColor");
+    border-color: stencilColor("optimizedCheckout-button-secondary-borderColor");
+    color: stencilColor("optimizedCheckout-button-secondary-color");
+    font-family: stencilFontFamily("optimizedCheckout-button-secondary-font"), Arial, Helvetica, sans-serif;
+    font-weight: stencilFontWeight("optimizedCheckout-button-secondary-font");
+}
+
+//
+// Links
+// Text Color & Typography
+// -----------------------------------------------------------------------------
+
+a {
+    color: stencilColor("optimizedCheckout-link-color");
+    font-family: stencilFontFamily("optimizedCheckout-link-font"), Arial, Helvetica, sans-serif;
+    font-weight: stencilFontWeight("optimizedCheckout-link-font");
+}
+
+//
+// Order Summary (Mobile Drawer & Modal)
+// Background
+// -----------------------------------------------------------------------------
+
+.optimizedCheckout-orderSummary {
+    background-color: stencilColor("optimizedCheckout-orderSummary-backgroundColor");
+}
+
+//
+// Checkout Steps
+// Background & Text Color
+// -----------------------------------------------------------------------------
+
+.optimizedCheckout-step {
+    background-color: stencilColor("optimizedCheckout-step-backgroundColor");
+
+    &::before {
+        color: stencilColor("optimizedCheckout-step-text");
+    }
+
+    svg {
+        fill: stencilColor("optimizedCheckout-step-text");
+    }
+}
+
+//
+// Form Labels
+// Text Color
+// -----------------------------------------------------------------------------
+
+.optimizedCheckout-form-label {
+    color: stencilColor("optimizedCheckout-form-text");
+}
+
+//
+// Form Input
+// Background & Border Color
+// -----------------------------------------------------------------------------
+
+.optimizedCheckout-form-input {
+    background-color: stencilString("optimizedCheckout-formField-backgroundColor");
+    border-color: stencilColor("optimizedCheckout-formField-borderColor");
 }
