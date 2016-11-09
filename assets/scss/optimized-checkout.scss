@@ -11,15 +11,6 @@
 // =============================================================================
 
 //
-// Import Mixins/Tools
-// breakpoint
-// -----------------------------------------------------------------------------
-
-@import "../../node_modules/@bigcommerce/citadel/dist/tools/toolkit"; // 1
-@import "settings/global/global"; // 1
-@import "../../node_modules/@bigcommerce/citadel/dist/settings/global/global"; // 2
-
-//
 // Header Section
 // Background, Logo Position
 // -----------------------------------------------------------------------------
@@ -31,8 +22,11 @@
     // scss-lint:enable StringQuotes
     background-size: cover;
 
-    // Desktop Only
-    @include breakpoint("medium") {
+    //
+    // TODO:
+    // Configure media query to be 'desktop' breakpoint size
+    // -----------------------------------------------------------------------------
+    @media (min-width: 801px) {
         text-align: stencilString("optimizedCheckout-logo-position");
     }
 }
