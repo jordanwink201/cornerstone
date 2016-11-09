@@ -1480,7 +1480,7 @@
         "id": "optimizedCheckout-show-backgroundImage"
       },
       {
-        "type": "image",
+        "type": "optimizedCheckout-image",
         "label": "1000 x 400px recommended",
         "reference": "optimizedCheckout-show-backgroundImage",
         "reference_default": false,
@@ -1524,7 +1524,7 @@
         ]
       },
       {
-        "type": "image",
+        "type": "optimizedCheckout-image",
         "label": "250 x 100px recommended",
         "reference": "optimizedCheckout-show-logo",
         "reference_default": "none",
