@@ -16,18 +16,15 @@
 // -----------------------------------------------------------------------------
 
 .optimizedCheckout-header {
-    background-color: stencilColor("optimizedCheckout-header-backgroundColor");
-    // scss-lint:disable StringQuotes
-    background-image: url(stencilImage('optimizedCheckout-backgroundImage', 'optimizedCheckout-backgroundImage-size'));
-    // scss-lint:enable StringQuotes
-    background-size: cover;
+    //background-color:
+    //background-image:
+    //background-size:
 
-    //
-    // TODO:
+    // TODO: logo position
     // Configure media query to be 'desktop' breakpoint size
     // -----------------------------------------------------------------------------
     @media (min-width: 801px) {
-        text-align: stencilString("optimizedCheckout-logo-position");
+        //text-align:
     }
 }
 
@@ -37,15 +34,15 @@
 // -----------------------------------------------------------------------------
 
 .optimizedCheckout-headingPrimary {
-    color: stencilColor("optimizedCheckout-headingPrimary-color");
-    font-family: stencilFontFamily("optimizedCheckout-headingPrimary-font"), Arial, Helvetica, sans-serif;
-    font-weight: stencilFontWeight("optimizedCheckout-headingPrimary-font");
+    //color:
+    //font-family:
+    //font-weight:
 }
 
 .optimizedCheckout-headingSecondary {
-    color: stencilColor("optimizedCheckout-headingSecondary-color");
-    font-family: stencilFontFamily("optimizedCheckout-headingSecondary-font"), Arial, Helvetica, sans-serif;
-    font-weight: stencilFontWeight("optimizedCheckout-headingSecondary-font");
+    //color:
+    //font-family:
+    //font-weight:
 }
 
 //
@@ -54,11 +51,11 @@
 // -----------------------------------------------------------------------------
 
 body {
-    background-color: stencilColor("optimizedCheckout-body-backgroundColor");
+    //background-color:
 }
 
 .optimizedCheckout-overlay {
-    background-color: stencilColor("optimizedCheckout-body-backgroundColor");
+    //background-color:
 }
 
 //
@@ -67,15 +64,15 @@ body {
 // -----------------------------------------------------------------------------
 
 .optimizedCheckout-contentPrimary {
-    color: stencilColor("optimizedCheckout-contentPrimary-color");
-    font-family: stencilFontFamily("optimizedCheckout-contentPrimary-font"), Arial, Helvetica, sans-serif;
-    font-weight: stencilFontWeight("optimizedCheckout-contentPrimary-font");
+    //color:
+    //font-family:
+    //font-weight:
 }
 
 .optimizedCheckout-contentSecondary {
-    color: stencilColor("optimizedCheckout-contentSecondary-color");
-    font-family: stencilFontFamily("optimizedCheckout-contentSecondary-font"), Arial, Helvetica, sans-serif;
-    font-weight: stencilFontWeight("optimizedCheckout-contentSecondary-font");
+    //color:
+    //font-family:
+    //font-weight:
 }
 
 //
@@ -84,23 +81,23 @@ body {
 // -----------------------------------------------------------------------------
 
 .optimizedCheckout-button--primary {
-    background-color: stencilColor("optimizedCheckout-button-primary-backgroundColor");
-    border-color: stencilColor("optimizedCheckout-button-primary-borderColor");
-    color: stencilColor("optimizedCheckout-button-primary-color");
-    font-family: stencilFontFamily("optimizedCheckout-button-primary-font"), Arial, Helvetica, sans-serif;
-    font-weight: stencilFontWeight("optimizedCheckout-button-primary-font");
+    //background-color:
+    //border-color:
+    //color:
+    //font-family:
+    //font-weight:
 
     &:focus,
     &:hover {
-        background-color: stencilColor("optimizedCheckout-button-primary-backgroundColorHover");
-        border-color: stencilColor("optimizedCheckout-button-primary-borderColorHover");
-        color: stencilColor("optimizedCheckout-button-primary-colorHover");
+        //background-color:
+        //border-color:
+        //color:
     }
 
     &:active {
-        background-color: stencilColor("optimizedCheckout-button-primary-backgroundColorActive");
-        border-color: stencilColor("optimizedCheckout-button-primary-borderColorActive");
-        color: stencilColor("optimizedCheckout-button-primary-colorActive");
+        //background-color:
+        //border-color:
+        //color:
     }
 }
 
@@ -110,11 +107,11 @@ body {
 // -----------------------------------------------------------------------------
 
 .optimizedCheckout-button--secondary {
-    background-color: stencilColor("optimizedCheckout-button-secondary-backgroundColor");
-    border-color: stencilColor("optimizedCheckout-button-secondary-borderColor");
-    color: stencilColor("optimizedCheckout-button-secondary-color");
-    font-family: stencilFontFamily("optimizedCheckout-button-secondary-font"), Arial, Helvetica, sans-serif;
-    font-weight: stencilFontWeight("optimizedCheckout-button-secondary-font");
+    //background-color:
+    //border-color:
+    //color:
+    //font-family:
+    //font-weight:
 }
 
 //
@@ -123,9 +120,9 @@ body {
 // -----------------------------------------------------------------------------
 
 a {
-    color: stencilColor("optimizedCheckout-link-color");
-    font-family: stencilFontFamily("optimizedCheckout-link-font"), Arial, Helvetica, sans-serif;
-    font-weight: stencilFontWeight("optimizedCheckout-link-font");
+    //color:
+    //font-family:
+    //font-weight:
 }
 
 //
@@ -134,7 +131,7 @@ a {
 // -----------------------------------------------------------------------------
 
 .optimizedCheckout-orderSummary {
-    background-color: stencilColor("optimizedCheckout-orderSummary-backgroundColor");
+    //background-color:
 }
 
 //
@@ -143,14 +140,14 @@ a {
 // -----------------------------------------------------------------------------
 
 .optimizedCheckout-step {
-    background-color: stencilColor("optimizedCheckout-step-backgroundColor");
+    //background-color:
 
     &::before {
-        color: stencilColor("optimizedCheckout-step-text");
+        //color:
     }
 
     svg {
-        fill: stencilColor("optimizedCheckout-step-text");
+        //fill:
     }
 }
 
@@ -160,7 +157,7 @@ a {
 // -----------------------------------------------------------------------------
 
 .optimizedCheckout-form-label {
-    color: stencilColor("optimizedCheckout-form-text");
+    //color:
 }
 
 //
@@ -169,6 +166,6 @@ a {
 // -----------------------------------------------------------------------------
 
 .optimizedCheckout-form-input {
-    background-color: stencilString("optimizedCheckout-formField-backgroundColor");
-    border-color: stencilColor("optimizedCheckout-formField-borderColor");
+    //background-color:
+    //border-color:
 }
