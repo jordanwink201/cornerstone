@@ -8,13 +8,14 @@ export default function (maintenanceMode = {}) {
     const header = maintenanceMode.header;
     const notice = maintenanceMode.notice;
     const password = maintenanceMode.password;
+    const securePath = maintenanceMode.secure_path;
 
-    if (!(header && notice)) {
+    // Return if header & notice is null or if securePath is not defined (means inside theme editor)
+    if (!(header && notice) || !securePath) {
         return;
     }
 
     if (password) {
-        const securePath = maintenanceMode.secure_path;
         const $element = $('<div>', {
             class: 'adminBar',
         });
