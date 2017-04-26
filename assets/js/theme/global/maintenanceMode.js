@@ -32,6 +32,19 @@ export default function (maintenanceMode = {}) {
 
         $('body').addClass('hasAdminBar');
         $('body').prepend($element);
+
+        $(window).scroll(() => {
+            const $topBarContainer = $('.adminBar');
+            const scrollTop = $(window).scrollTop();
+
+            if (scrollTop > 15) {
+                if (!$topBarContainer.hasClass('adminBar--scroll')) {
+                    $topBarContainer.addClass('adminBar--scroll');
+                }
+            } else if (scrollTop === 0) {
+                $topBarContainer.removeClass('adminBar--scroll');
+            }
+        });
     } else {
         const $element = $('<div>', {
             id: 'maintenance-notice',

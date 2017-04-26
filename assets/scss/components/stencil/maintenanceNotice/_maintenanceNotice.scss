@@ -69,6 +69,11 @@ body.hasAdminBar {
     top: 0;
     width: 100%;
     z-index: 10000;
+
+    &.adminBar--scroll {
+        box-shadow: 0 remCalc(2) remCalc(7) 0 rgba(0, 0, 0, 0.2);
+        transition: all 0.2s ease-in;
+    }
 }
 
 .adminBar-logo {
