@@ -11,6 +11,7 @@
 - Update bigcommerce.com footer link [#990](https://github.com/bigcommerce/cornerstone/pull/990)
 - Fix invalid icon HTML in AMP templates [#989](https://github.com/bigcommerce/cornerstone/pull/989)
 - Add new theme editor setting for SSL common name to enable GeoTrust badge to work properly [#994](https://github.com/bigcommerce/cornerstone/pull/994)
+- Add storefront admin bar to replace store not launched preview panel [#997](https://github.com/bigcommerce/cornerstone/pull/997)
 
 ## 1.6.3 (2017-03-28)
 - `stencil.conf.js` was refactored to support webpack2 builds [961](https://github.com/bigcommerce/cornerstone/pull/961)
