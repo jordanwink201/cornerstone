@@ -57,10 +57,11 @@ body.hasAdminBar {
 
 .adminBar {
     background-color: $adminBar-color;
+    box-shadow: 0 remCalc(2) remCalc(7) 0 rgba(0, 0, 0, 0.2);
     color: $adminBar-text-color;
     float: left;
     font-family: "Source Sans Pro", arial, "sans serif", sans-serif;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 600;
     height: $adminBar-height;
     left: 0;
@@ -69,11 +70,6 @@ body.hasAdminBar {
     top: 0;
     width: 100%;
     z-index: 10000;
-
-    &.adminBar--scroll {
-        box-shadow: 0 remCalc(2) remCalc(7) 0 rgba(0, 0, 0, 0.2);
-        transition: all 0.2s ease-in;
-    }
 }
 
 .adminBar-logo {

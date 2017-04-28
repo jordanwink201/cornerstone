@@ -8,7 +8,7 @@ export default function (maintenanceMode = {}) {
     const header = maintenanceMode.header;
     const notice = maintenanceMode.notice;
     const password = maintenanceMode.password;
-    const securePath = maintenanceMode.secure_path;
+    const securePath = maintenanceMode.secure_path || '';
 
     // Return if header & notice is null or if securePath is not defined (means inside theme editor)
     if (!(header && notice) || !securePath) {
@@ -19,32 +19,21 @@ export default function (maintenanceMode = {}) {
         const $element = $('<div>', {
             class: 'adminBar',
         });
+        const url = encodeURIComponent((window.location.pathname + window.location.search).replace(/^\/|\/$/g, ''));
 
         $element.html(`<div class="adminBar-logo">
             <a href="${securePath}/manage/dashboard"><svg><use xlink:href="#logo-small"></use></svg></a></div>
             <div class="adminBar-content">
-                <a href="${securePath}/manage/theme-editor" target="_blank">Customize Theme</a>
+                <a href="${securePath}/manage/theme-editor?redirectIframeUrl=${url}" target="_blank">Customize Theme</a>
                 <div class="adminBar-private">
                     <span>Your storefront is private.</span>
                     <span class="preview">Share your site with preview code: ${password}</span>
                 </div>
             </div>`);
 
+
         $('body').addClass('hasAdminBar');
         $('body').prepend($element);
-
-        $(window).scroll(() => {
-            const $topBarContainer = $('.adminBar');
-            const scrollTop = $(window).scrollTop();
-
-            if (scrollTop > 15) {
-                if (!$topBarContainer.hasClass('adminBar--scroll')) {
-                    $topBarContainer.addClass('adminBar--scroll');
-                }
-            } else if (scrollTop === 0) {
-                $topBarContainer.removeClass('adminBar--scroll');
-            }
-        });
     } else {
         const $element = $('<div>', {
             id: 'maintenance-notice',
