@@ -30,8 +30,25 @@ export default function (maintenanceMode = {}) {
                 </div>
             </div>`);
 
+        // `redirectIframeUrl` param format is `url1/url2/url3`
+        const attachThemeEditorParams = (evt) => {
+            evt.preventDefault();
+
+            const params = window.location.href.split('/').splice(3);
+            const redirectIframeUrl = params.reduce((acc, param) => `${acc}/${param}`, '').slice(1);
+            let themeEditorUrl = `${evt.target.href}`;
+
+            if (redirectIframeUrl) {
+                themeEditorUrl = `${themeEditorUrl}?redirectIframeUrl=${redirectIframeUrl}`;
+            }
+
+            return window.open(themeEditorUrl, '_blank');
+        };
+
         $('body').addClass('hasAdminBar');
         $('body').prepend($element);
+
+        $('.adminBar-content a').click(attachThemeEditorParams);
     } else {
         const $element = $('<div>', {
             id: 'maintenance-notice',
