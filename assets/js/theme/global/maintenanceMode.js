@@ -7,11 +7,12 @@ import $ from 'jquery';
 export default function (maintenanceMode = {}) {
     const header = maintenanceMode.header;
     const notice = maintenanceMode.notice;
-    const password = maintenanceMode.password;
-    const securePath = maintenanceMode.secure_path || '';
+    const password = maintenanceMode.password || false;
+    const isInIframe = window.location !== window.parent.location;
+    const securePath = maintenanceMode.securePath || '';
 
-    // Return if header & notice is null or if securePath is not defined (means inside theme editor)
-    if (!(header && notice) || !securePath) {
+    // Return if header & notice is null or if isInIframe is false (inside theme editor)
+    if (!(header && notice) || isInIframe) {
         return;
     }
 
@@ -19,7 +20,8 @@ export default function (maintenanceMode = {}) {
         const $element = $('<div>', {
             class: 'adminBar',
         });
-        const url = encodeURIComponent((window.location.pathname + window.location.search).replace(/^\/|\/$/g, ''));
+
+        const url = encodeURIComponent((new URL(window.location.href).pathname + window.location.search).replace(/^\/|\/$/g, ''));
 
         $element.html(`<div class="adminBar-logo">
             <a href="${securePath}/manage/dashboard"><svg><use xlink:href="#logo-small"></use></svg></a></div>
